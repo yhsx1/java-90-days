@@ -1,0 +1,30 @@
+# Java compiled files
+*.class
+
+# Maven and Gradle build outputs
+target/
+build/
+.gradle/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+out/
+
+# Operating system
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+
+# Local configurations
+application-local.yml
+application-local.yaml
+application-local.properties
