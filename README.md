@@ -306,6 +306,6 @@ Day 01 课程验收：4 / 4 通过。
 
 - Student Manager Console：未开始。
 - Campus Assistant Platform：未开始。
-- Git 本地仓库及 GitHub 提交状态：尚未验证。
+- Git 本地仓库及 GitHub 提交状态：已提交。
 
 下一步：Day 02，Java 基本数据类型、变量、常量与基础输出。
