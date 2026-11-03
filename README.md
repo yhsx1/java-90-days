@@ -158,7 +158,7 @@
 
 完整规划结构：
 
-```text id="pfr9oa"
+```text
 java-90-days/
 ├── README.md
 ├── .gitignore
@@ -197,12 +197,16 @@ java-90-days/
 
 ### 每日学习目录
 
-以 Day 01 为例：
+以 Day 02 为例：
 
-```text id="opmdol"
+```text
 01-java-basics/
-└── day01/
+└── day02/
     ├── code/
+    │   ├── StudentInfoDemo.java
+    │   ├── BookOrderCalculator.java
+    │   ├── StudentProfilePrinter.java
+    │   └── CourseStatisticsReport.java
     ├── tasks.md
     └── notes.md
 ```
@@ -237,6 +241,7 @@ Spring Boot 项目根据业务需求逐步添加 controller、service、mapper�
 8. 不假设代码已经编译、运行或提交。
 9. 每天控制在 2–3 小时。
 10. 每天使用一个独立会话。
+11. 所有需要提交内容的环节提供交互式提交框。
 
 ### 理论问答限制
 
@@ -261,25 +266,28 @@ Day 78–90 统一进行理论知识、算法、项目答辩和技术面试训�
 
 Commit Message 示例：
 
-```text id="1k5wxv"
+```text
 feat(day01): complete Java fundamentals and environment setup
-docs(day01): update learning notes
+feat(day02): complete Java types and operators exercises
+docs(day02): archive learning notes and progress
 feat(student-manager): implement student CRUD
 fix(campus-assistant): prevent duplicate enrollment
 ```
 
 ## 8. 当前学习进度
 
-最后更新：2026-10-26。
+最后更新：2026-11-03。
 
 | 学习日 | 主题                                | 状态   |
 |--------|-------------------------------------|--------|
 | Day 01 | Java 基础认知、开发环境、第一个程序 | 已完成 |
-| Day 02 | 基本数据类型、变量、常量与基础输出  | 未开始 |
+| Day 02 | 基本数据类型、变量、常量与基础输出  | 已完成 |
 
-当前已完成：1 / 90 天。
+当前已完成：2 / 90 天。
 
 Day 01 课程验收：4 / 4 通过。
+
+Day 02 课程验收：4 / 4 通过。
 
 当前开发环境：
 
@@ -291,7 +299,14 @@ Day 01 课程验收：4 / 4 通过。
 
 `01-java-basics/day01/code/HelloJava.java`
 
-编译运行验证通过。
+Day 02 已完成四个独立 Java 练习：
+
+- `01-java-basics/day02/code/StudentInfoDemo.java`
+- `01-java-basics/day02/code/BookOrderCalculator.java`
+- `01-java-basics/day02/code/StudentProfilePrinter.java`
+- `01-java-basics/day02/code/CourseStatisticsReport.java`
+
+以上练习均已通过编译运行及正式验收。
 
 ## 9. 学习记录
 
@@ -299,6 +314,9 @@ Day 01 课程验收：4 / 4 通过。
 - [Day 01 学习任务](01-java-basics/day01/tasks.md)
 - [Day 01 学习笔记](01-java-basics/day01/notes.md)
 - [Day 01 交接记录](docs/handoffs/day01.md)
+- [Day 02 学习任务](01-java-basics/day02/tasks.md)
+- [Day 02 学习笔记](01-java-basics/day02/notes.md)
+- [Day 02 交接记录](docs/handoffs/day02.md)
 
 后续学习记录按天持续补充。
 
@@ -308,4 +326,4 @@ Day 01 课程验收：4 / 4 通过。
 - Campus Assistant Platform：未开始。
 - Git 本地仓库及 GitHub 提交状态：已提交。
 
-下一步：Day 02，Java 基本数据类型、变量、常量与基础输出。
+下一步：Day 03，Java 关系运算、逻辑运算与布尔表达式。
