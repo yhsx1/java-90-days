@@ -95,6 +95,10 @@
 
 > 以下为计划中的课程与验收要求，不代表已经完成。实际完成情况以第 8 节及每日 `tasks.md`、`notes.md`、`docs/handoffs/` 为准。Day 01–77 仅进行编码和实操验收；理论问答集中在 Day 78–90。
 
+逐日学习安排中列出的 `.java` 文件是当天的核心综合验收文件。
+
+每天可以根据知识点安排针对性的小练习，但不强制每节课都创建独立 Java 文件。当天以完成核心知识点、独立编程和综合验收为主要目标。
+
 #### 第一阶段：Java 基础与面向对象（Day 01–21）
 
 阶段目标：不依赖 Python 编写 Java 程序，能够独立构建面向对象的命令行应用。
@@ -304,9 +308,7 @@
 
 **周验收：** 完成基础算法训练、项目技术答辩、简历初稿及最终综合面试。
 
-**阶段交付物：** Java 面试复习资料、LeetCode 练习、项目技术难点总结、GitHub 项目仓库、简历初稿与模拟面试复盘。
-
----
+**阶段交付物：** Java 面试复习资料、LeetCode 练习、项目技术介绍、简历及完整 GitHub 项目展示。
 
 ## 4. 正式项目
 
@@ -381,7 +383,6 @@ java-90-days/
 ├── .gitignore
 │
 ├── docs/
-│   ├── roadmap.md
 │   ├── progress.md
 │   ├── checkpoints/
 │   └── handoffs/
@@ -423,7 +424,8 @@ java-90-days/
     │   ├── StudentInfoDemo.java
     │   ├── BookOrderCalculator.java
     │   ├── StudentProfilePrinter.java
-    │   └── CourseStatisticsReport.java
+    │   ├── CourseStatisticsReport.java
+    │   └── StudentInfo.java
     ├── tasks.md
     └── notes.md
 ```
@@ -431,6 +433,12 @@ java-90-days/
 - `code/`：当天独立编程练习。
 - `tasks.md`：课程任务与验收记录。
 - `notes.md`：知识点、代码要点和错误记录。
+
+每日路线图中指定的 Java 源文件作为当天的核心综合验收产物。
+
+教学过程中可以安排针对性小练习，但不要求每天只能创建一个 Java 文件，也不强制每节课创建一个新文件。
+
+优先保证核心知识覆盖、独立编码、运行测试和学习时间合理。
 
 ### 正式项目目录
 
@@ -459,6 +467,10 @@ Spring Boot 项目根据业务需求逐步添加 controller、service、mapper�
 9. 每天控制在 2–3 小时。
 10. 每天使用一个独立会话。
 11. 所有需要提交内容的环节提供交互式提交框。
+12. 路线图指定的 Java 文件为当天核心综合验收文件。
+13. 小练习根据学习需要安排，不单纯追求文件数量。
+14. 每天最后的核心综合练习必须覆盖当天原定的主要知识点。
+15. 已经通过实际编程验证的内容不重复安排同类任务。
 
 ### 理论问答限制
 
@@ -485,8 +497,8 @@ Commit Message 示例：
 
 ```text
 feat(day01): complete Java fundamentals and environment setup
-feat(day02): complete Java types and operators exercises
-docs(day02): archive learning notes and progress
+feat(day02): complete Java basics exercises and learning records
+docs(day02): update Java input output learning records
 feat(student-manager): implement student CRUD
 fix(campus-assistant): prevent duplicate enrollment
 ```
@@ -495,16 +507,18 @@ fix(campus-assistant): prevent duplicate enrollment
 
 最后更新：2026-11-03。
 
-| 学习日 | 主题                                | 状态   |
-|--------|-------------------------------------|--------|
-| Day 01 | Java 基础认知、开发环境、第一个程序 | 已完成 |
-| Day 02 | 基本数据类型、变量、常量与基础输出  | 已完成 |
+| 学习日 | 主题                                   | 状态   |
+|--------|----------------------------------------|--------|
+| Day 01 | Java 基础认知、开发环境、第一个程序    | 已完成 |
+| Day 02 | 基本数据类型、变量、常量与基础输入输出 | 已完成 |
 
 当前已完成：2 / 90 天。
 
 Day 01 课程验收：4 / 4 通过。
 
 Day 02 课程验收：4 / 4 通过。
+
+Day 02 Java 编程练习：5 / 5 通过。
 
 当前开发环境：
 
@@ -516,14 +530,22 @@ Day 02 课程验收：4 / 4 通过。
 
 `01-java-basics/day01/code/HelloJava.java`
 
-Day 02 已完成四个独立 Java 练习：
+Day 02 已完成五个独立 Java 练习：
 
 - `01-java-basics/day02/code/StudentInfoDemo.java`
 - `01-java-basics/day02/code/BookOrderCalculator.java`
 - `01-java-basics/day02/code/StudentProfilePrinter.java`
 - `01-java-basics/day02/code/CourseStatisticsReport.java`
+- `01-java-basics/day02/code/StudentInfo.java`
 
-以上练习均已通过编译运行及正式验收。
+五个 Java 程序均通过编译运行及正式验收。
+
+其中：
+
+- CourseStatisticsReport.java：16/16 测试通过。
+- StudentInfo.java：15/15 测试通过，完成两组输入输出测试。
+
+Day 02 已完成变量、基本数据类型、类型转换、常量、算术运算、Scanner 标准输入与 printf 格式化输出等内容。
 
 ## 9. 学习记录
 
@@ -541,6 +563,10 @@ Day 02 已完成四个独立 Java 练习：
 
 - Student Manager Console：未开始。
 - Campus Assistant Platform：未开始。
-- Git 本地仓库及 GitHub 提交状态：已提交。
+- Git 本地仓库及 GitHub 历史提交状态：已提交。
 
-下一步：Day 03，Java 关系运算、逻辑运算与布尔表达式。
+下一步：Day 03，Java 运算符、if/else、switch 与成绩等级判断。
+
+Day 03 核心综合验收文件：
+
+`01-java-basics/day03/code/GradeJudge.java`

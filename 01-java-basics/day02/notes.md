@@ -4,9 +4,10 @@
 
 - 学习日期：2026-11-03
 - 所属阶段：第一阶段，Java 基础与面向对象
-- 学习主题：Java 基本数据类型、变量、常量与基础输出
+- 学习主题：Java 基本数据类型、变量、常量与基础输入输出
 - 开发环境：Windows、JDK 21、IntelliJ IDEA
 - 课程完成情况：4/4
+- Java 编程练习：5 个
 - 最终验收结果：全部通过
 
 ## 二、Java 变量与基本数据类型
@@ -27,9 +28,9 @@ boolean isEnrolled = true;
 
 其中：
 
-- `int`、`String`、`boolean` 表示数据类型。
-- `studentAge` 等是变量名。
-- `=` 表示赋值。
+- int、String、boolean 表示数据类型。
+- studentAge 等是变量名。
+- 等号表示赋值。
 - 右侧是变量的初始值。
 - 分号表示语句结束。
 
@@ -274,6 +275,67 @@ Java 提供 char 基本类型，而 Python 没有独立的 char 基本类型。
 
 Java 的 String 和 Python 的 str 都属于不可变字符串类型。
 
+### 3.6 控制台输入
+
+Python 可以使用 input() 读取一行文本。
+
+```python
+name = input("Enter name: ")
+age = int(input("Enter age: "))
+```
+
+Java 可以使用 Scanner 从标准输入流读取不同类型的数据。
+
+```java
+import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter name: ");
+        String name = scanner.nextLine();
+
+        System.out.print("Enter age: ");
+        int age = scanner.nextInt();
+
+        System.out.println(name);
+        System.out.println(age);
+    }
+}
+```
+
+主要区别：
+
+- Python 的 input() 返回 str，需要自行转换数值类型。
+- Java Scanner 提供 nextInt()、nextDouble() 等方法，可直接读取指定类型。
+- nextLine() 读取一整行文本。
+- Scanner 需要正确处理不同读取方法之间的换行符问题。
+
+### 3.7 格式化输出
+
+Python 可以使用 f-string：
+
+```python
+score = 89.756
+print(f"Score: {score:.2f}")
+```
+
+Java 可以使用 printf：
+
+```java
+double score = 89.756;
+System.out.printf("Score: %.2f%n", score);
+```
+
+在使用小数点作为十进制分隔符的区域设置下，两者都可以显示：
+
+```text
+Score: 89.76
+```
+
+Java 使用百分号引导格式说明符，而 Python 的 f-string 在花括号内指定格式。
+
 ## 四、Java 运算与类型转换
 
 ### 4.1 算术运算符
@@ -451,7 +513,7 @@ result 为 30。
 
 在业务计算中适当使用括号，可以提高代码可读性。
 
-## 五、Java 常量与字符串输出
+## 五、Java 常量与基础输入输出
 
 ### 5.1 final 关键字
 
@@ -585,6 +647,123 @@ Java
 
 对于普通整行输出，通常优先使用 println。
 
+### 5.7 Scanner 与标准输入
+
+Java 的 System.in 表示标准输入流。
+
+Scanner 是 Java 标准库中用于解析输入数据的类。
+
+使用前需要导入：
+
+```java
+import java.util.Scanner;
+```
+
+创建 Scanner 对象：
+
+```java
+Scanner scanner = new Scanner(System.in);
+```
+
+主要输入方法：
+
+| 方法         | 作用                     | 返回类型 |
+|--------------|--------------------------|----------|
+| nextLine()   | 读取一整行文本           | String   |
+| next()       | 读取下一个非空白文本片段 | String   |
+| nextInt()    | 读取整数                 | int      |
+| nextDouble() | 读取浮点数               | double   |
+
+示例：
+
+```java
+System.out.print("Enter course: ");
+String courseName = scanner.nextLine();
+
+System.out.print("Enter credits: ");
+int credits = scanner.nextInt();
+
+System.out.print("Enter price: ");
+double price = scanner.nextDouble();
+```
+
+需要注意：
+
+1. nextLine() 可以保留输入文本中的空格。
+2. nextInt() 和 nextDouble() 需要输入符合相应的数值格式。
+3. nextInt() 不会自动消费数字之后的整行换行符。
+4. 在 nextInt() 之后直接调用 nextLine() 时，需要关注残留换行问题。
+5. Scanner 的数值解析可能受到区域设置影响。
+6. 当前阶段仅练习合法输入，非法输入异常处理在后续课程学习。
+
+### 5.8 printf 格式化输出
+
+System.out.printf() 用于根据格式字符串输出数据。
+
+常见格式说明符：
+
+| 格式 | 作用                     |
+|------|--------------------------|
+| %s   | 输出字符串               |
+| %d   | 输出十进制整数           |
+| %f   | 输出浮点数               |
+| %.2f | 输出浮点数并保留两位小数 |
+| %n   | 输出平台适用的换行符     |
+| %%   | 输出百分号               |
+
+例如：
+
+```java
+String productName = "Notebook";
+int quantity = 4;
+double unitPrice = 12.875;
+
+System.out.printf("Product: %s%n", productName);
+System.out.printf("Quantity: %d%n", quantity);
+System.out.printf("Price: %.2f%n", unitPrice);
+```
+
+在使用英文小数点的区域设置下，输出：
+
+```text
+Product: Notebook
+Quantity: 4
+Price: 12.88
+```
+
+需要注意：
+
+- printf 不会自动换行。
+- 格式说明符与参数类型必须匹配。
+- 参数的排列顺序应与格式说明符一致。
+- %.2f 只控制显示形式，不会改变原 double 变量存储的值。
+- 格式化输出可能受到区域设置影响。
+
+### 5.9 输入输出综合流程
+
+一个基本控制台程序的处理流程为：
+
+```text
+用户输入
+   |
+   v
+System.in
+   |
+   v
+Scanner 读取数据
+   |
+   v
+Java 变量保存数据
+   |
+   v
+程序计算或处理
+   |
+   v
+System.out.printf 输出结果
+```
+
+这一流程是后续学生管理系统、命令行工具和业务程序的基础。
+
 ## 六、Windows Java 开发环境
 
 ### 6.1 已安装的 JDK
@@ -621,7 +800,7 @@ E:\Java\java-90-days
 E:\Java\java-90-days\01-java-basics\day02\code
 ```
 
-Day 02 的四个 Java 文件均保存在该目录下。
+Day 02 的五个 Java 文件均保存在该目录下。
 
 ### 6.4 编译命令
 
@@ -634,7 +813,7 @@ cd E:\Java\java-90-days\01-java-basics\day02\code
 编译单个文件：
 
 ```powershell
-javac CourseStatisticsReport.java
+javac -encoding UTF-8 StudentInfo.java
 ```
 
 检查编译退出码：
@@ -648,10 +827,12 @@ $LASTEXITCODE
 ### 6.5 运行命令
 
 ```powershell
-java CourseStatisticsReport
+java StudentInfo
 ```
 
 运行时使用类名，不添加 `.class` 后缀。
+
+StudentInfo.java 需要用户输入数据，应在终端出现输入提示后依次输入姓名、年龄和分数。
 
 ### 6.6 编译与运行的区别
 
@@ -688,7 +869,7 @@ public 顶层类的类名应与源文件基本名称一致。
 
 `public static void main(String[] args)`
 
-Day 02 的四个练习均使用该结构。
+Day 02 的五个练习均使用该结构。
 
 ### 7.3 变量声明与作用范围
 
@@ -706,25 +887,33 @@ Java 使用花括号组织代码块。
 
 规范缩进有助于识别代码结构。
 
-### 7.5 控制台输出
+### 7.5 控制台输入输出
 
-Day 02 同时使用：
+Day 02 使用：
 
-- System.out.print
-- System.out.println
+- Scanner
+- System.in
+- nextLine()
+- nextInt()
+- nextDouble()
+- System.out.print()
+- System.out.println()
+- System.out.printf()
 - 字符串拼接
+- 格式说明符
 - 转义字符
 
-通过这些基础能力输出学生信息和业务计算报告。
+通过这些基础能力读取学生数据、计算业务结果并输出报告。
 
 ### 7.6 程序命名规范
 
-四个练习采用有意义的类名：
+五个练习采用有意义的类名：
 
 - StudentInfoDemo
 - BookOrderCalculator
 - StudentProfilePrinter
 - CourseStatisticsReport
+- StudentInfo
 
 类名采用大驼峰命名法。
 
@@ -736,9 +925,11 @@ Day 02 同时使用：
 
 ### 8.1 练习目标
 
-通过四个独立 Java 控制台程序，掌握基础数据存储、数值计算、常量及规范输出。
+通过五个独立 Java 控制台程序，掌握基础数据存储、数值计算、常量、标准输入及格式化输出。
 
-四个练习均不属于正式 Student Manager Console 项目。
+五个练习均属于 Java 基础阶段，不属于正式 Student Manager Console 项目。
+
+其中 StudentInfo.java 是当天的核心输入输出练习。
 
 ### 8.2 文件位置
 
@@ -755,6 +946,7 @@ StudentInfoDemo.java
 BookOrderCalculator.java
 StudentProfilePrinter.java
 CourseStatisticsReport.java
+StudentInfo.java
 ```
 
 完整工作目录：
@@ -765,7 +957,7 @@ E:\Java\java-90-days\01-java-basics\day02\code
 
 ### 8.3 最终源代码
 
-四个正式验收通过的程序分别保存在对应 Java 源文件中。
+五个通过正式验收的程序分别保存在对应 Java 源文件中。
 
 主要实现内容：
 
@@ -805,6 +997,41 @@ E:\Java\java-90-days\01-java-basics\day02\code
 - 复合赋值。
 - 综合报告输出。
 
+**StudentInfo.java**
+
+- Scanner 标准输入。
+- 学生姓名、年龄与分数读取。
+- nextLine、nextInt 和 nextDouble。
+- printf 格式化输出。
+- 两组输入数据测试。
+
+最终通过验收的 StudentInfo.java 源代码：
+
+```java
+import java.util.Scanner;
+
+public class StudentInfo {
+    public static void main(String[] args) {
+        // 创建 Scanner 对象
+        Scanner scanner = new Scanner(System.in);
+
+        // 读取学生信息
+        System.out.print("Enter student name: ");
+        String studentName = scanner.nextLine();
+        System.out.print("Enter student age: ");
+        int studentAge = scanner.nextInt();
+        System.out.print("Enter student score: ");
+        double studentScore = scanner.nextDouble();
+
+        // 输出学生信息
+        System.out.println("===== Student Information =====");
+        System.out.printf("Name: %s%n", studentName);
+        System.out.printf("Age: %d%n", studentAge);
+        System.out.printf("Score: %.2f%n", studentScore);
+    }
+}
+```
+
 ### 8.4 编译命令
 
 在 Day 02 的 code 目录中分别执行：
@@ -814,9 +1041,10 @@ javac StudentInfoDemo.java
 javac BookOrderCalculator.java
 javac StudentProfilePrinter.java
 javac CourseStatisticsReport.java
+javac StudentInfo.java
 ```
 
-四个程序均已完成编译验收。
+五个程序均已完成编译验收。
 
 ### 8.5 运行命令
 
@@ -825,11 +1053,16 @@ java StudentInfoDemo
 java BookOrderCalculator
 java StudentProfilePrinter
 java CourseStatisticsReport
+java StudentInfo
 ```
 
-四个程序的最终运行输出均符合对应课程的预期要求。
+五个程序的最终运行输出均符合对应练习的预期要求。
+
+StudentInfo.java 需要从键盘读取学生数据，已使用两组输入完成运行测试。
 
 ### 8.6 综合练习最终运行结果
+
+**CourseStatisticsReport.java**
 
 ```text
 ===== Course Statistics Report =====
@@ -850,6 +1083,32 @@ Updated Completed Credits: 88
 Report Generated Successfully
 ```
 
+**StudentInfo.java：第一组测试**
+
+```text
+Enter student name: Alice
+Enter student age: 23
+Enter student score: 89.756
+===== Student Information =====
+Name: Alice
+Age: 23
+Score: 89.76
+```
+
+**StudentInfo.java：第二组测试**
+
+```text
+Enter student name: Alice Smith
+Enter student age: 20
+Enter student score: 100
+===== Student Information =====
+Name: Alice Smith
+Age: 20
+Score: 100.00
+```
+
+第二组测试说明 nextLine() 可以正确读取包含空格的姓名，printf 能将整数值形式的分数显示为两位小数。
+
 ### 8.7 综合验收结果
 
 Day 02：
@@ -858,8 +1117,11 @@ Day 02：
 - 第 2 课：验收通过。
 - 第 3 课：验收通过。
 - 第 4 课：验收通过。
+- 第 5 项 StudentInfo.java 练习：验收通过。
 
-综合练习 TC01–TC16 全部通过。
+CourseStatisticsReport.java：TC01–TC16 全部通过。
+
+StudentInfo.java：TC01–TC15 全部通过。
 
 ## 九、错误记录与修改经验
 
@@ -905,6 +1167,12 @@ Average  Amount: 102.66666666666667
 
 另外，首次提交未满足至少使用两次 System.out.print 的要求。
 
+**第 5 项练习：StudentInfo**
+
+首次提交通过验收。
+
+Scanner 读取、printf 格式化输出以及两组运行结果均符合要求。
+
 ### 9.2 修复方式
 
 第 1 课：
@@ -923,7 +1191,7 @@ Average  Amount: 102.66666666666667
 - 使用两次 System.out.print。
 - 保持最终十六行输出不变。
 
-所有问题均在修改后重新编译运行并通过验收。
+所有实际发现的问题均在修改后重新编译运行并通过验收。
 
 ### 9.3 调试经验
 
@@ -935,8 +1203,10 @@ Average  Amount: 102.66666666666667
 6. 复合赋值需要考虑变量当前值。
 7. 修改代码后需要重新编译运行。
 8. 代码审查和运行结果应分别验证。
-9. 应优先进行最小范围修改，避免引入新的问题。
-10. 最终验收以实际提交的代码及运行结果为准。
+9. Scanner 读取不同数据类型时应注意方法的区别。
+10. printf 的格式说明符必须与参数类型匹配。
+11. 包含空格的姓名适合使用 nextLine() 读取。
+12. 同一个输入程序应使用不同数据完成运行测试。
 
 ## 十、常见错误汇总
 
@@ -964,8 +1234,6 @@ float score = 95.5;
 ```
 
 普通小数字面量默认是 double。
-
-可使用适当的 float 字面量。
 
 ### 10.4 整数除法导致精度丢失
 
@@ -1033,7 +1301,42 @@ MAX_COUNT = 200;
 
 例如，综合练习要求至少使用两次 System.out.print。
 
-最终版本必须同时满足功能要求和语法练习要求。
+### 10.11 Scanner 输入类型不匹配
+
+nextInt() 需要读取符合整数格式的输入。
+
+nextDouble() 需要读取符合当前 Scanner 区域设置的浮点数格式。
+
+如果输入不能按预期解析，可能发生输入不匹配异常。
+
+非法输入处理将在后续课程中学习。
+
+### 10.12 nextLine 与 nextInt 混合使用
+
+nextInt() 只解析整数，不会自动读取完整行。
+
+如果在 nextInt() 后直接调用 nextLine()，可能读取到之前输入留下的换行符。
+
+可以根据实际输入顺序选择适当的读取方案。
+
+### 10.13 printf 格式说明符错误
+
+例如：
+
+```java
+int age = 23;
+System.out.printf("Age: %s%n", age);
+```
+
+该格式说明符与整数参数类型不匹配。
+
+应使用与参数类型对应的格式说明符。
+
+### 10.14 printf 忘记换行
+
+printf 不自动换行。
+
+如果需要每次输出独占一行，应在格式字符串中使用 `%n` 或其他合适的换行方式。
 
 ## 十一、工程目录与文件规范
 
@@ -1058,7 +1361,8 @@ java-90-days/
 │       │   ├── StudentInfoDemo.java
 │       │   ├── BookOrderCalculator.java
 │       │   ├── StudentProfilePrinter.java
-│       │   └── CourseStatisticsReport.java
+│       │   ├── CourseStatisticsReport.java
+│       │   └── StudentInfo.java
 │       ├── tasks.md
 │       └── notes.md
 └── docs/
@@ -1082,6 +1386,8 @@ java-90-days/
 - IDE 本地缓存和敏感配置不提交 Git。
 - 不覆盖已经验收的 Day 01 文件。
 - 不提前创建后续学习日或正式项目目录。
+- 路线图指定的 Java 文件作为当天核心验收任务。
+- 每节课可以安排独立的小练习，但不强制每节新建一个 Java 文件。
 
 ## 十二、Day 02 最终总结
 
@@ -1092,7 +1398,9 @@ java-90-days/
 3. 常量与字符串输出。
 4. Day 02 综合编程验收。
 
-四节课均已正式验收通过。
+完成五个 Java 编程练习，包括 StudentInfo.java 学生信息输入输出程序。
+
+四节课程及五个练习均已正式验收通过。
 
 ### 12.2 已掌握的基础操作
 
@@ -1109,10 +1417,17 @@ java-90-days/
 - 使用 String 保存文本。
 - 使用字符串拼接输出业务信息。
 - 使用 print 与 println 控制输出。
+- 使用 Scanner 读取键盘输入。
+- 使用 nextLine 读取包含空格的文本。
+- 使用 nextInt 和 nextDouble 读取数值。
+- 使用 printf 格式化输出。
+- 使用 %.2f 控制小数显示位数。
+- 使用 %n 控制换行。
 - 使用 javac 编译程序。
 - 使用 java 运行程序。
 - 根据代码审查意见修复错误。
-- 对照预期输出完成正式验收。
+- 使用不同输入数据测试程序。
+- 对照预期结果完成正式验收。
 
 ### 12.3 正式项目状态
 
@@ -1124,14 +1439,14 @@ Campus Assistant Platform：尚未开始，计划 Day 36 启动。
 
 Day 03 主题：
 
-**Java 关系运算、逻辑运算与布尔表达式。**
+**Java 运算符、if/else、switch 与成绩等级判断。**
 
 预计学习内容：
 
-1. Java 关系运算符。
-2. 逻辑运算符与短路求值。
-3. 运算优先级与布尔表达式。
-4. Day 03 综合 Java 编程实操。
+1. 关系运算符、逻辑运算符与布尔表达式。
+2. if/else 多分支条件判断。
+3. switch 多分支选择。
+4. GradeJudge.java 综合编程与成绩边界测试。
 
 Day 03 继续执行一课一练、独立编程、提示修改及正式验收。
 
@@ -1139,4 +1454,4 @@ Day 03 继续执行一课一练、独立编程、提示修改及正式验收。
 
 Day 01–77 不安排理论问答或模拟面试。
 
-**Day 02 最终状态：4/4 课程验收通过。**
+**Day 02 最终状态：4/4 课程、5/5 编程练习验收通过。**
