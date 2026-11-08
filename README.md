@@ -390,6 +390,7 @@ java-90-days/
 ├── 01-java-basics/
 │   ├── day01/
 │   ├── day02/
+│   ├── day03/
 │   └── ...
 │
 ├── 02-java-core-database/
@@ -426,6 +427,20 @@ java-90-days/
     │   ├── StudentProfilePrinter.java
     │   ├── CourseStatisticsReport.java
     │   └── StudentInfo.java
+    ├── tasks.md
+    └── notes.md
+```
+
+Day 03 已完成目录：
+
+```text
+01-java-basics/
+└── day03/
+    ├── code/
+    │   ├── LibraryAccessCheck.java
+    │   ├── ShippingFeeCalculator.java
+    │   ├── OrderStatusChecker.java
+    │   └── GradeJudge.java
     ├── tasks.md
     └── notes.md
 ```
@@ -468,7 +483,7 @@ Spring Boot 项目根据业务需求逐步添加 controller、service、mapper�
 10. 每天使用一个独立会话。
 11. 所有需要提交内容的环节提供交互式提交框。
 12. 路线图指定的 Java 文件为当天核心综合验收文件。
-13. 小练习根据学习需要安排，不单纯追求文件数量。
+13. 小练习根据学习需要安排，不单纯追求练习数量。
 14. 每天最后的核心综合练习必须覆盖当天原定的主要知识点。
 15. 已经通过实际编程验证的内容不重复安排同类任务。
 
@@ -499,26 +514,34 @@ Commit Message 示例：
 feat(day01): complete Java fundamentals and environment setup
 feat(day02): complete Java basics exercises and learning records
 docs(day02): update Java input output learning records
+feat(day03): complete Java conditionals and switch exercises
 feat(student-manager): implement student CRUD
 fix(campus-assistant): prevent duplicate enrollment
 ```
 
 ## 8. 当前学习进度
 
-最后更新：2026-11-03。
+最后更新：2026-11-08。
 
 | 学习日 | 主题                                   | 状态   |
 |--------|----------------------------------------|--------|
 | Day 01 | Java 基础认知、开发环境、第一个程序    | 已完成 |
 | Day 02 | 基本数据类型、变量、常量与基础输入输出 | 已完成 |
+| Day 03 | 运算符、if/else、switch 与成绩等级判断 | 已完成 |
 
-当前已完成：2 / 90 天。
+当前已完成：3 / 90 天。
 
 Day 01 课程验收：4 / 4 通过。
 
 Day 02 课程验收：4 / 4 通过。
 
 Day 02 Java 编程练习：5 / 5 通过。
+
+Day 03 课程验收：4 / 4 通过。
+
+Day 03 Java 编程练习：4 / 4 通过。
+
+Day 03 业务测试：48 / 48 通过。
 
 当前开发环境：
 
@@ -547,6 +570,24 @@ Day 02 已完成五个独立 Java 练习：
 
 Day 02 已完成变量、基本数据类型、类型转换、常量、算术运算、Scanner 标准输入与 printf 格式化输出等内容。
 
+Day 03 已完成四个独立 Java 练习：
+
+- `01-java-basics/day03/code/LibraryAccessCheck.java`
+- `01-java-basics/day03/code/ShippingFeeCalculator.java`
+- `01-java-basics/day03/code/OrderStatusChecker.java`
+- `01-java-basics/day03/code/GradeJudge.java`
+
+四个 Java 程序均通过编译运行及正式验收。
+
+其中：
+
+- LibraryAccessCheck.java：12/12 验收通过，6/6 组业务测试通过。
+- ShippingFeeCalculator.java：15/15 验收通过，10/10 组业务测试通过。
+- OrderStatusChecker.java：15/15 验收通过，8/8 组业务测试通过。
+- GradeJudge.java：20/20 验收通过，24/24 组业务与边界测试通过。
+
+Day 03 已完成关系运算符、逻辑运算符、boolean 表达式、if/else、switch、非法输入处理和成绩等级边界测试。
+
 ## 9. 学习记录
 
 - [每日学习进度](docs/progress.md)
@@ -556,6 +597,9 @@ Day 02 已完成变量、基本数据类型、类型转换、常量、算术运�
 - [Day 02 学习任务](01-java-basics/day02/tasks.md)
 - [Day 02 学习笔记](01-java-basics/day02/notes.md)
 - [Day 02 交接记录](docs/handoffs/day02.md)
+- [Day 03 学习任务](01-java-basics/day03/tasks.md)
+- [Day 03 学习笔记](01-java-basics/day03/notes.md)
+- [Day 03 交接记录](docs/handoffs/day03.md)
 
 后续学习记录按天持续补充。
 
@@ -565,8 +609,8 @@ Day 02 已完成变量、基本数据类型、类型转换、常量、算术运�
 - Campus Assistant Platform：未开始。
 - Git 本地仓库及 GitHub 历史提交状态：已提交。
 
-下一步：Day 03，Java 运算符、if/else、switch 与成绩等级判断。
+下一步：Day 04，Java for、while、break、continue 与循环控制。
 
-Day 03 核心综合验收文件：
+Day 04 核心综合验收文件：
 
-`01-java-basics/day03/code/GradeJudge.java`
+`01-java-basics/day04/code/NumberPractice.java`

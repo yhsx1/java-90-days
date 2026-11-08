@@ -1,0 +1,374 @@
+# Java 90 Days 学习进度
+
+## 1. 基本信息
+
+- 学习计划：Java 90 Days
+- 开始日期：2026-10-26
+- 学习周期：90 天
+- 每日学习时间：2–3 小时
+- 主线：Java 后端开发
+- 辅线：AI 智能体应用开发
+- 当前阶段：Java 基础与面向对象
+- 当前已完成：Day 01、Day 02、Day 03
+- 下一学习日：Day 04
+- 最后更新：2026-11-08
+
+## 2. 整体进度
+
+已完成学习日：3 / 90。
+
+整体完成率：约 3.33%。
+
+| 阶段                  | 时间      | 状态   |
+|-----------------------|-----------|--------|
+| Java 基础与面向对象   | Day 01–21 | 进行中 |
+| Java 核心进阶与数据库 | Day 22–35 | 未开始 |
+| Spring Boot 后端开发  | Day 36–56 | 未开始 |
+| 工程化与 AI 智能体    | Day 57–77 | 未开始 |
+| 面试准备与求职冲刺    | Day 78–90 | 未开始 |
+
+## 3. 每日学习进度
+
+| 学习日 | 课程主题                                    | 课程验收      | 状态   |
+|--------|---------------------------------------------|---------------|--------|
+| Day 01 | Java 基础认知、开发环境、第一个 Java 程序   | 4/4           | 已完成 |
+| Day 02 | Java 基本数据类型、变量、常量与基础输入输出 | 4/4，5 个练习 | 已完成 |
+| Day 03 | Java 运算符、if/else、switch 与成绩等级判断 | 4/4，4 个练习 | 已完成 |
+
+其余学习日根据实际进度逐步添加，不提前标记完成。
+
+## 4. Day 01 详细记录
+
+学习日期：2026-10-26。
+
+| 课程    | 主题               | 状态     |
+|---------|--------------------|----------|
+| 第 1 课 | Java 基础认知      | 验收通过 |
+| 第 2 课 | Java 开发环境配置  | 验收通过 |
+| 第 3 课 | 第一个 Java 程序   | 验收通过 |
+| 第 4 课 | 综合实操与学习归档 | 验收通过 |
+
+### 已完成内容
+
+- JDK 21 环境检查
+- JAVA_HOME 与 Path 验证
+- IntelliJ IDEA Project SDK 配置
+- Java 基础语法入门
+- Java 源文件编译
+- Java 字节码文件检查
+- Java 命令行运行
+- IDEA 运行
+- HelloJava.java 编程练习
+- 输出错误修改
+- Day 01 学习归档
+
+### 已完成练习
+
+`01-java-basics/day01/code/HelloJava.java`
+
+测试结果：编译成功，运行输出符合要求。
+
+### 问题修复
+
+首次运行输出缺少逗号，修改后重新编译并通过正式验收。
+
+### 最终结果
+
+Day 01：全部验收通过。
+
+## 5. Day 02 详细记录
+
+学习日期：2026-11-03。
+
+| 课程    | 主题                        | 状态     |
+|---------|-----------------------------|----------|
+| 第 1 课 | Java 变量与八种基本数据类型 | 验收通过 |
+| 第 2 课 | 变量运算与类型转换          | 验收通过 |
+| 第 3 课 | 常量与字符串输出            | 验收通过 |
+| 第 4 课 | 综合编程验收                | 验收通过 |
+
+### 已完成内容
+
+- Java 变量声明、初始化与赋值
+- Java 八种基本数据类型
+- String 与基本数据类型的区别
+- Java 变量命名规范
+- 算术运算和取余运算
+- 整数除法与浮点数除法
+- 自动类型转换和强制类型转换
+- 复合赋值运算符
+- 整数溢出与浮点数精度基础
+- final 常量
+- 字符串拼接
+- print 与 println
+- 基础转义字符
+- System.in 标准输入
+- Scanner 对象及基本输入方法
+- nextLine、nextInt 和 nextDouble
+- System.out.printf 格式化输出
+- %s、%d、%.2f 和 %n
+- 包含空格的文本输入
+- 多组输入数据测试
+- Java 与 Python 的相关区别
+- Day 02 学习归档
+
+### 已完成练习
+
+`01-java-basics/day02/code/StudentInfoDemo.java`
+
+`01-java-basics/day02/code/BookOrderCalculator.java`
+
+`01-java-basics/day02/code/StudentProfilePrinter.java`
+
+`01-java-basics/day02/code/CourseStatisticsReport.java`
+
+`01-java-basics/day02/code/StudentInfo.java`
+
+测试结果：
+
+- 五个 Java 程序均通过代码审查。
+- 五个程序均完成本地编译与运行验收。
+- 最终输出符合各练习要求。
+- CourseStatisticsReport.java 综合测试 TC01–TC16 全部通过。
+- StudentInfo.java 综合测试 TC01–TC15 全部通过。
+- StudentInfo.java 完成两组不同输入的测试。
+- Scanner 标准输入与 printf 格式化输出正确。
+
+### 问题修复
+
+第 1 课：
+
+- 重复类定义。
+- 输出内容多余冒号。
+- 更新后年龄的输出标签错误。
+
+第 2 课：
+
+- Average Amount 输出标签存在多余空格。
+
+第 3 课：
+
+- 首次提交通过，无须修改。
+
+第 4 课：
+
+- 余数变量命名错误。
+- System.out.print 调用次数不足。
+
+StudentInfo.java：
+
+- 首次提交通过，无须修改。
+
+以上实际发现的问题均已修复，所有练习通过正式验收。
+
+### 最终结果
+
+Day 02：4/4 课程、5/5 编程练习全部验收通过。
+
+## 6. Day 03 详细记录
+
+学习日期：2026-11-05 至 2026-11-08。
+
+| 课程    | 主题                               | 状态     |
+|---------|------------------------------------|----------|
+| 第 1 课 | 关系运算符、逻辑运算符与布尔表达式 | 验收通过 |
+| 第 2 课 | if/else 条件判断                   | 验收通过 |
+| 第 3 课 | switch 多分支选择                  | 验收通过 |
+| 第 4 课 | GradeJudge.java 综合编程与边界测试 | 验收通过 |
+
+### 已完成内容
+
+- Java 六种关系运算符
+- boolean 表达式
+- 逻辑与 &&、逻辑或 ||、逻辑非 !
+- 逻辑运算真值规则
+- && 和 || 短路求值
+- 运算符优先级
+- 多条件业务判断
+- Java 流程控制概念
+- if 单分支
+- if/else 双分支
+- else if 多分支
+- 条件执行顺序
+- 数值区间与边界判断
+- 条件遮蔽与条件遗漏
+- 花括号与代码块
+- switch 固定值匹配
+- case、break、default
+- 传统 switch 贯穿
+- Java 21 箭头式 switch 基础
+- switch 与 if/else 的区别
+- Java 与 Python 条件分支区别
+- Scanner 与分支控制综合应用
+- 正常值、非法值和边界值测试
+- Day 03 核心综合编程验收
+
+### 已完成练习
+
+`01-java-basics/day03/code/LibraryAccessCheck.java`
+
+`01-java-basics/day03/code/ShippingFeeCalculator.java`
+
+`01-java-basics/day03/code/OrderStatusChecker.java`
+
+`01-java-basics/day03/code/GradeJudge.java`
+
+测试结果：
+
+- 四个 Java 程序均通过代码审查。
+- 四个程序均完成本地编译与运行验收。
+- 最终输出符合各练习要求。
+- LibraryAccessCheck.java：TC01–TC12 全部通过，六组业务测试全部通过。
+- ShippingFeeCalculator.java：TC01–TC15 全部通过，十组业务测试全部通过。
+- OrderStatusChecker.java：TC01–TC15 全部通过，八组业务测试全部通过。
+- GradeJudge.java：AC01–AC20 全部通过。
+- GradeJudge.java：TC01–TC24 全部通过。
+- 累计 48 组业务测试全部通过。
+- 成绩等级、非法输入和小数边界处理正确。
+
+### 问题修复
+
+第 1 课：
+
+- LibraryAccessCheck.java 首次提交遗漏 accountActive 条件。
+- 修改最终借阅资格表达式。
+- 六组测试复验全部通过。
+
+第 2 课：
+
+- ShippingFeeCalculator.java 首次提交通过。
+- 记录冗余条件与代码格式优化建议。
+
+第 3 课：
+
+- OrderStatusChecker.java 首次提交的 default 输出多余内容。
+- 第一次修改后的 Unknown order status 仍与要求不一致。
+- 最终修改为 Invalid order status。
+- 三组非法状态测试复验通过。
+
+第 4 课：
+
+- GradeJudge.java 首次提交通过。
+- 记录重复合法性判断、非法成绩继续执行 switch 和空 default 的优化建议。
+- 24 组成绩测试全部通过。
+
+以上实际发现的问题均已解决，不存在阻断性功能问题。
+
+### 最终结果
+
+Day 03：4/4 课程、4/4 编程练习全部验收通过。
+
+## 7. 开发环境状态
+
+| 组件            | 当前状态                           |
+|-----------------|------------------------------------|
+| Windows         | 已确认使用 Windows，具体版本未记录 |
+| JDK             | Temurin 21.0.12.1 LTS              |
+| javac           | 21.0.12.1                          |
+| IntelliJ IDEA   | 已安装、已配置 JDK 21              |
+| Java 项目模块   | java-90-days                       |
+| Maven           | 尚未验证                           |
+| Git             | 已安装并正常使用                   |
+| GitHub 远程仓库 | 已创建并完成历史提交               |
+| MySQL           | 尚未开始学习                       |
+| Redis           | 尚未开始学习                       |
+| Spring Boot     | 尚未开始学习                       |
+
+## 8. 正式项目进度
+
+### Student Manager Console
+
+- 路径：`projects/student-manager-console/`
+- 计划周期：Day 08–35
+- 当前状态：尚未开始
+- 当前版本：无
+- 已完成功能：无
+- 待开发功能：学生 CRUD、成绩统计、面向对象分层、集合、文件 IO、JDBC、MySQL 等
+
+### Campus Assistant Platform
+
+- 路径：`projects/campus-assistant-platform/`
+- 计划周期：Day 36–77
+- 当前状态：尚未开始
+- 当前版本：无
+- 已完成功能：无
+- 待开发功能：课程管理、选课、认证授权、缓存、并发控制、AI 助手、RAG 和工具调用等
+
+## 9. 阶段综合验收计划
+
+| 日期   | 验收主题          | 状态   |
+|--------|-------------------|--------|
+| Day 21 | Java 基础项目     | 未开始 |
+| Day 35 | Java 核心与数据库 | 未开始 |
+| Day 56 | Spring Boot 后端  | 未开始 |
+| Day 77 | 工程化与 AI 集成  | 未开始 |
+| Day 90 | 求职能力综合验收  | 未开始 |
+
+## 10. 教学规范
+
+### Day 01–77
+
+- 不安排理论问答。
+- 不安排选择题、判断题或填空题。
+- 不安排面试模拟。
+- 不要求背诵 Java 八股文。
+- 通过编程、测试、运行结果和项目实操完成验收。
+
+### Day 78–90
+
+集中进行理论问答、算法、项目答辩和模拟面试。
+
+### 日常教学流程
+
+知识讲解 → 示例演示 → 独立实操 → 提交代码 → 代码检查 → 提示修改 → 正式验收。
+
+### 文件管理
+
+- 每天创建独立练习目录。
+- Markdown 文件由导师提供完整内容。
+- Markdown 正文不需要提交检查。
+- 代码及运行结果需要提交正式验收。
+- 所有涉及提交的环节均提供交互式提交框。
+- 每天完成后生成交接记录。
+- 每天使用新的学习会话。
+- 正式项目持续迭代，不重复创建。
+- 路线图指定的 Java 文件为当天核心综合验收产物。
+- 每课可安排针对性小练习，不强制每课创建独立 Java 文件。
+- 每天以完成核心知识点和综合任务为准，不单纯追求练习数量。
+
+## 11. Git 与 GitHub
+
+- 本地 Git 仓库：已建立
+- GitHub 远程仓库：已创建
+- GitHub 地址：https://github.com/yhsx1/java-90-days
+- 仓库名称：java-90-days
+- 当前主要分支：main
+- Day 01 Git 提交及推送：完成
+- Day 02 已确认的历史提交：`d29df72`
+- Day 02 五个 Java 练习：全部验收通过
+- Day 03 四个 Java 练习：全部验收通过
+- Day 03 综合测试：48/48 通过
+- 最新学习记录：已整理
+
+## 12. 下一步计划
+
+Day 04 学习：
+
+**Java for、while、break、continue 与循环控制。**
+
+计划内容：
+
+1. for 循环的基本结构、循环变量及执行过程。
+2. while 循环的基本结构及循环终止条件。
+3. break、continue 与嵌套循环基础。
+4. NumberPractice.java 综合编程、循环求和与九九乘法表。
+
+Day 04 核心练习：
+
+`01-java-basics/day04/code/NumberPractice.java`
+
+Day 04 工作目录：
+
+`01-java-basics/day04/`
+
+Day 04 尚未开始。
