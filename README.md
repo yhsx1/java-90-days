@@ -1,36 +1,43 @@
 # Java 90 Days
 
-> 90 天 Java 后端开发系统学习计划，以 Java 后端工程师为主线，以 AI 智能体应用开发为辅线。
+> 90 天 Java 系统学习与项目实战计划，以 Java 后端开发为主要方向，同时学习 AI 智能体应用开发。
 
 ## 1. 项目简介
 
-本仓库用于记录为期 90 天的 Java 系统学习、编程练习、项目开发与求职准备过程。
+本仓库用于持续记录 Java 90 天学习过程，包含每日课程、代码练习、项目开发、测试验收和求职准备成果。
 
-学习目标：
+### 学习目标
 
-- 系统掌握 Java 核心语法和面向对象编程。
-- 掌握 Java 集合、异常处理、IO、多线程和 JVM 基础。
-- 熟悉 MySQL、JDBC、SQL 和事务处理。
-- 掌握 Spring Boot、MyBatis、Redis 和 Spring Security。
-- 具备 REST API 设计、数据库开发、自动化测试及项目部署能力。
-- 学习 Spring AI、大语言模型 API、RAG 和 AI 工具调用。
-- 完成具有一定工程质量的 Java 后端项目。
-- 为 Java 后端开发实习及校招做好准备。
+- 系统学习 Java 基础语法和面向对象编程。
+- 掌握 Java 集合、泛型、异常、IO、多线程与 JVM 基础。
+- 学习 MySQL、JDBC、SQL 和数据库事务。
+- 使用 Spring Boot、MyBatis、Redis 和 Spring Security 开发后端服务。
+- 掌握 REST API、参数校验、数据库开发和自动化测试。
+- 学习 Linux、Git、Docker 等工程化技能。
+- 探索 Spring AI、大语言模型 API、RAG 和工具调用。
+- 完成能够展示真实开发能力的 Java 项目。
+- 为计算机技术类岗位、Java 后端研发岗位及研究生校招做好准备。
 
 学习周期：90 天。
 
-每日投入：2–3 小时。
+每日学习时间：2–3 小时。
 
-学习原则：循序渐进、注重原理、独立编码、项目驱动、逐课验收。
+求职方向：江苏、浙江地区央国企计算机相关技术岗位，同时考虑 Java 研发及其他计算机技术岗位。
+
+预计毕业年份：2028 年。
+
+学习原则：循序渐进、理解原理、独立编程、按需测试、逐课验收、持续归档。
 
 ## 2. 技术栈
 
 ### Java 核心
 
 - Java 21 LTS
+- 基础语法与流程控制
 - 面向对象编程
 - Java 集合框架
-- 泛型与异常处理
+- 泛型
+- 异常处理
 - 文件 IO
 - Lambda 与 Stream
 - Java 并发
@@ -52,10 +59,11 @@
 ### 工程化
 
 - Git / GitHub
-- Linux 基础
+- Linux
 - Docker / Docker Compose
-- 日志与配置管理
-- 接口测试
+- 日志管理
+- 配置管理
+- API 测试
 - 自动化测试
 - 项目文档
 
@@ -69,355 +77,363 @@
 - 向量检索
 - RAG
 - Tool Calling
-- AI 与 Java 业务系统集成
+- Java 后端与 AI 服务集成
 
-说明：以上是整个 90 天的计划技术栈，不代表当前已经掌握或安装了所有工具。实际版本将在相应课程中检查兼容性。
+上述技术属于整个学习周期的规划范围，不表示当前已经全部安装或掌握。相关工具和版本将在对应学习日逐步验证。
 
 ## 3. 90 天学习路线
 
-| 阶段     | 时间      | 学习主题               | 阶段成果                       |
-|----------|-----------|------------------------|--------------------------------|
-| 第一阶段 | Day 01–21 | Java 基础与面向对象    | 学生管理系统控制台版本         |
-| 第二阶段 | Day 22–35 | Java 核心进阶与数据库  | 学生管理系统 MySQL 版本        |
-| 第三阶段 | Day 36–56 | Spring Boot 后端开发   | 校园课程管理核心后端           |
-| 第四阶段 | Day 57–77 | 后端工程化与 AI 智能体 | 校园课程管理与 AI 助手综合项目 |
-| 第五阶段 | Day 78–90 | 面试准备与求职冲刺     | 项目整理、简历和模拟面试       |
+| 阶段 | 学习日 | 学习主题 | 主要成果 |
+|---|---|---|---|
+| 第一阶段 | Day 01–21 | Java 基础与面向对象 | 学生管理系统控制台版本 |
+| 第二阶段 | Day 22–35 | Java 核心进阶与数据库 | 学生管理系统 MySQL 版本 |
+| 第三阶段 | Day 36–56 | Spring Boot 后端开发 | 校园课程管理核心后端 |
+| 第四阶段 | Day 57–77 | 后端工程化与 AI 智能体 | 校园管理与 AI 助手综合项目 |
+| 第五阶段 | Day 78–90 | 面试准备与求职冲刺 | 项目整理、简历和模拟面试 |
 
-阶段综合验收安排：
+### 阶段综合验收
 
-- Day 21：Java 基础项目验收
-- Day 35：Java 核心与数据库验收
-- Day 56：Spring Boot 后端验收
-- Day 77：工程化与 AI 集成验收
-- Day 90：最终求职能力综合验收
+- Day 21：Java 基础项目验收。
+- Day 35：Java 核心与数据库验收。
+- Day 56：Spring Boot 后端验收。
+- Day 77：工程化与 AI 集成验收。
+- Day 90：最终求职能力综合验收。
 
 ### 3.1 逐日学习安排（Day 01–90）
 
-> 以下为计划中的课程与验收要求，不代表已经完成。实际完成情况以第 8 节及每日 `tasks.md`、`notes.md`、`docs/handoffs/` 为准。Day 01–77 仅进行编码和实操验收；理论问答集中在 Day 78–90。
+以下列出各学习日原定的核心内容与实践目标。实际完成情况以第 8 节和每日归档文件为准。
 
-逐日学习安排中列出的 `.java` 文件是当天的核心综合验收文件。
+逐日安排中的 `.java` 文件表示当天核心综合验收产物。可以根据学习需要设置其他练习，但不强制每一节都建立新的 Java 文件。
 
-每天可以根据知识点安排针对性的小练习，但不强制每节课都创建独立 Java 文件。当天以完成核心知识点、独立编程和综合验收为主要目标。
+Day 01–77 以实际编程和项目验收为主，理论问答与模拟面试集中在 Day 78–90。
 
 #### 第一阶段：Java 基础与面向对象（Day 01–21）
 
-阶段目标：不依赖 Python 编写 Java 程序，能够独立构建面向对象的命令行应用。
+阶段目标：能够使用 Java 独立编写程序，掌握面向对象思想，并构建学生管理系统控制台应用。
 
 ##### 第 1 周：Java 基础语法（Day 01–07）
 
-| 天数  | 课程知识点                                  | 当天练习 / 验收标准                                  |
-|-------|---------------------------------------------|------------------------------------------------------|
-| Day01 | JDK、IDEA、`main()`、`System.out.println()` | `HelloJava.java`；独立编译并运行程序，完成环境验证   |
-| Day02 | 变量、基本数据类型、类型转换、输入输出      | `StudentInfo.java`；读取姓名、年龄、分数并格式化输出 |
-| Day03 | 运算符、`if/else`、`switch`                 | `GradeJudge.java`；完成成绩等级判断与边界测试        |
-| Day04 | `for`、`while`、`break`、`continue`         | `NumberPractice.java`；完成求和、九九乘法表          |
-| Day05 | 数组、一维数组遍历、索引                    | `ScoreStatistics.java`；计算最高分、最低分、平均分   |
-| Day06 | 方法定义、参数、返回值、方法重载            | `Calculator.java`；封装加减乘除、最大值计算          |
-| Day07 | 第一周复习与综合考核                        | 完成命令行学生成绩统计器；至少通过 5 组测试          |
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day01 | JDK、IDEA、main 方法、控制台输出 | HelloJava.java；验证 Java 编译与运行环境 |
+| Day02 | 变量、基本数据类型、类型转换、输入输出 | StudentInfo.java；输入姓名、年龄、分数并完成格式化输出 |
+| Day03 | 运算符、if/else、switch | GradeJudge.java；实现成绩等级判断及边界处理 |
+| Day04 | for、while、break、continue | NumberPractice.java；完成整数求和与九九乘法表 |
+| Day05 | 数组、一维数组遍历、索引 | ScoreStatistics.java；统计学生最高分、最低分和平均分 |
+| Day06 | 方法定义、参数、返回值、方法重载 | Calculator.java；封装加减乘除和最大值计算 |
+| Day07 | 第一周综合复习与考核 | 完成命令行学生成绩统计器，至少通过五组业务测试 |
 
-**周验收：** 能够独立创建 Java 类、读取用户输入、使用条件与循环控制流程，并把重复逻辑提取到方法中。
+**周验收目标：** 能够独立创建 Java 类，处理控制台输入，结合条件和循环完成业务计算，并通过方法组织可复用逻辑。
 
 ##### 第 2 周：Java 面向对象（Day 08–14）
 
-| 天数  | 课程知识点                            | 当天练习 / 验收标准                 |
-|-------|---------------------------------------|-------------------------------------|
-| Day08 | 类、对象、字段、成员方法              | `Student.java`；创建多个学生对象    |
-| Day09 | 构造方法、`this`、封装、getter/setter | 验证学生年龄和成绩，禁止非法数据    |
-| Day10 | 继承、`super`、方法重写               | 实现 `Person`、`Student`、`Teacher` |
-| Day11 | 多态、向上转型、动态绑定              | 使用父类引用处理不同子类对象        |
-| Day12 | 抽象类、接口                          | 设计 `ScoreService` 接口和实现类    |
-| Day13 | `static`、`final`、包、访问修饰符     | 拆分 `model`、`service`、`app` 包   |
-| Day14 | 面向对象综合项目                      | 完成学生管理系统 V1；支持增删改查   |
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day08 | 类、对象、字段、成员方法 | Student.java；创建多个学生对象 |
+| Day09 | 构造方法、this、封装、getter/setter | 为学生年龄和成绩增加合法性限制 |
+| Day10 | 继承、super、方法重写 | 编写 Person、Student、Teacher |
+| Day11 | 多态、向上转型、动态绑定 | 使用父类引用操作不同子类对象 |
+| Day12 | 抽象类、接口 | 定义 ScoreService 接口及实现 |
+| Day13 | static、final、包和访问修饰符 | 划分 model、service、app 等包 |
+| Day14 | 面向对象综合项目 | 学生管理系统 V1；实现基础增删改查 |
 
-**周验收：** 完成具有合理类结构的学生管理系统，正确使用封装、继承、多态和接口，不允许把全部业务逻辑放在 `main()` 方法中。
+**周验收目标：** 学生管理系统具有合理的类与包结构，正确运用封装、继承、多态及接口，避免全部业务集中在 main 方法中。
 
 ##### 第 3 周：集合、异常与工程基础（Day 15–21）
 
-| 天数  | 课程知识点                                 | 当天练习 / 验收标准                               |
-|-------|--------------------------------------------|---------------------------------------------------|
-| Day15 | `String`、`StringBuilder`、字符串常用 API  | `StringUtilsPractice.java`；完成清洗、搜索、拼接  |
-| Day16 | `List`、`ArrayList`、`Set`                 | `CollectionPractice.java`；实现存储与去重         |
-| Day17 | `Map`、`HashMap`、泛型                     | 使用 `Map<Integer, Student>` 管理学生信息         |
-| Day18 | 异常、`try/catch`、自定义异常              | 对非法输入、重复学号抛出和处理异常                |
-| Day19 | 文件 IO、`Files`、路径、try-with-resources | 将学生数据保存到本地文件并重新读取                |
-| Day20 | Lambda、Stream、Maven、JUnit 入门          | 使用 Stream 统计成绩，为服务方法编写单元测试      |
-| Day21 | 第一阶段综合验收                           | 学生管理系统 V2：增删改查、持久化、异常处理、测试 |
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day15 | String、StringBuilder、字符串 API | StringUtilsPractice.java；实现文本清洗、查找及拼接 |
+| Day16 | List、ArrayList、Set | CollectionPractice.java；完成集合存储与去重 |
+| Day17 | Map、HashMap、泛型 | 使用 Map<Integer, Student> 保存学生信息 |
+| Day18 | 异常、try/catch、自定义异常 | 正确处理非法输入和重复学号 |
+| Day19 | 文件 IO、Files、路径、try-with-resources | 保存学生数据并从文件恢复 |
+| Day20 | Lambda、Stream、Maven、JUnit | 通过 Stream 统计成绩并为服务编写测试 |
+| Day21 | 第一阶段综合验收 | 学生管理系统 V2；完成 CRUD、持久化、异常与测试 |
 
-**周验收：** 完成学生管理系统 V2，支持集合存储、文件持久化、异常处理和单元测试，能够使用 Maven 构建项目。
+**周验收目标：** 完成集合存储、文件持久化及异常处理，使用 Maven 管理项目并编写基础 JUnit 测试。
 
-**阶段交付物：** `projects/student-manager-console/`；完成增删改查、集合存储、文件持久化、异常处理、Maven 构建和基础 JUnit 测试，至少覆盖 8 个关键测试场景。
-
-#### 第二阶段：数据库与 Java 核心进阶（Day 22–35）
-
-阶段目标：理解 Java 后端的数据库持久化、并发处理及网络请求。
-
-##### 第 4 周：MySQL 与 JDBC（Day 22–28）
-
-| 天数  | 课程知识点                           | 当天练习 / 验收标准                   |
-|-------|--------------------------------------|---------------------------------------|
-| Day22 | MySQL 安装、数据库、数据表、数据类型 | 创建 `student_db`、`student` 表       |
-| Day23 | SQL 增删改查、`WHERE`、`ORDER BY`    | 编写至少 10 条 SQL 并验证结果         |
-| Day24 | 聚合、分组、分页、JOIN               | 建立班级表，完成关联与统计查询        |
-| Day25 | 主键、外键、索引、`EXPLAIN`          | 为学生查询设计索引并观察执行计划      |
-| Day26 | 事务、ACID、隔离级别                 | 设计转账示例，验证提交与回滚          |
-| Day27 | JDBC、PreparedStatement、DAO         | 使用 Java 实现学生数据库 CRUD         |
-| Day28 | 数据库阶段项目验收                   | 学生管理系统 V3：从文件存储改为 MySQL |
-
-**周验收：** 独立创建数据库、编写 SQL、验证事务回滚，通过 JDBC 实现学生 CRUD，使用参数化查询。
-
-##### 第 5 周：Java 核心与 Web 基础（Day 29–35）
-
-| 天数  | 课程知识点                       | 当天练习 / 验收标准                                   |
-|-------|----------------------------------|-------------------------------------------------------|
-| Day29 | 进程、线程、Thread、Runnable     | 编写两个并发执行的任务                                |
-| Day30 | 线程安全、`synchronized`、线程池 | 复现计数器竞态问题并修复                              |
-| Day31 | JVM、堆栈、GC、类加载入门        | 使用 JVM 工具观察运行进程与对象创建                   |
-| Day32 | HTTP、URL、状态码、JSON          | 使用 Postman 或 curl 发送 HTTP 请求                   |
-| Day33 | TCP/IP、DNS、HTTPS、REST 基础    | 使用网络工具观察 DNS 解析与 HTTP 请求                 |
-| Day34 | Linux 基础、常用命令、进程与端口 | 完成文件、进程、网络命令练习                          |
-| Day35 | 第二阶段综合验收                 | 完成 JDBC、事务、线程安全、HTTP 和 Linux 综合实操测试 |
-
-**周验收：** Java 正确操作 MySQL，完成事务和线程安全实验，能够使用基本网络与 Linux 命令。
-
-**阶段交付物：** `Student Manager Console V3`；支持 MySQL/JDBC CRUD、参数化查询与异常处理，保留数据库初始化 SQL 和实验运行结果。
-
-#### 第三阶段：Spring Boot 后端开发（Day 36–56）
-
-阶段目标：建立可运行的 REST API 后端，完成数据库、事务、认证、缓存和测试。
-
-##### 第 6 周：Spring 与第一个 Web API（Day 36–42）
-
-| 天数  | 课程知识点                          | 当天练习 / 验收标准                   |
-|-------|-------------------------------------|---------------------------------------|
-| Day36 | Spring IoC、DI、Bean                | 用一个小例子验证依赖注入              |
-| Day37 | Spring Boot 项目创建、Starter、配置 | 创建项目并成功启动                    |
-| Day38 | Controller、REST API、请求参数      | 完成 `/api/hello` 和学生查询接口      |
-| Day39 | Service 分层、依赖注入、DTO         | 将 Controller 与业务逻辑分离          |
-| Day40 | GET、POST、PUT、DELETE、状态码      | 完成基于内存数据的 CRUD API           |
-| Day41 | 参数校验、统一异常处理、响应规范    | 正确处理缺失字段和非法成绩            |
-| Day42 | Spring Boot 第一周验收              | 完成学生管理 API V1；接口可用工具测试 |
-
-**周验收：** 能独立启动 Spring Boot 项目，开发 CRUD 接口，完成参数校验和统一异常处理。
-
-##### 第 7 周：持久层与事务（Day 43–49）
-
-| 天数  | 课程知识点                 | 当天练习 / 验收标准                   |
-|-------|----------------------------|---------------------------------------|
-| Day43 | MyBatis、Mapper、SQL 映射  | Spring Boot 连接 MySQL                |
-| Day44 | MyBatis CRUD、动态 SQL     | 将学生接口接入真实数据库              |
-| Day45 | 分页、排序、条件查询       | 实现学生列表分页及姓名搜索            |
-| Day46 | 数据库设计与课程选课关系   | 创建学生、课程、选课三张表            |
-| Day47 | `@Transactional`、事务边界 | 完成选课与容量更新的事务操作          |
-| Day48 | Spring AOP、常用注解、日志 | 使用 AOP 添加请求日志                 |
-| Day49 | 后端阶段验收               | 学生及课程 API 可完成 CRUD 和选课流程 |
-
-**周验收：** Spring Boot 和 MySQL 正常联调，选课业务、事务回滚与分页查询正确。
-
-##### 第 8 周：Redis、认证与测试（Day 50–56）
-
-| 天数  | 课程知识点                     | 当天练习 / 验收标准                              |
-|-------|--------------------------------|--------------------------------------------------|
-| Day50 | Redis 数据类型、基本命令       | 操作 String、Hash、Set 与过期时间                |
-| Day51 | Spring Boot 集成 Redis         | 缓存课程列表，设置 TTL                           |
-| Day52 | 缓存一致性、缓存穿透基础       | 数据更新后缓存正确失效                           |
-| Day53 | 密码哈希、登录、会话与 JWT     | 实现基础登录与认证                               |
-| Day54 | Spring Security 基础、授权控制 | 未认证用户不能访问受保护接口                     |
-| Day55 | JUnit、MockMvc、接口测试       | 为关键服务和接口增加自动化测试                   |
-| Day56 | 第三阶段综合验收               | 后端业务系统 V1.0：API、MySQL、Redis、认证、测试 |
-
-**周验收：** 系统具备持久化、缓存、认证、授权及基础自动化测试。
-
-**阶段交付物：** `projects/campus-assistant-platform/` 的 V1.0；含学生与课程管理、选课事务、MyBatis、Redis、认证授权、异常处理与自动化测试。
-
-#### 第四阶段：项目工程化与 AI 智能体集成（Day 57–77）
-
-阶段目标：完善后端工程质量，并将 RAG、工具调用与现有业务系统集成。
-
-##### 第 9 周：项目完善与部署（Day 57–63）
-
-| 天数  | 课程知识点                       | 当天练习 / 验收标准                |
-|-------|----------------------------------|------------------------------------|
-| Day57 | 项目结构复盘、分层设计、职责划分 | 清理重复代码，优化包结构           |
-| Day58 | 并发业务场景、选课容量竞争       | 构造同时选课场景，保证容量不超限   |
-| Day59 | 乐观锁、条件更新、幂等性基础     | 修复重复请求和超额选课风险         |
-| Day60 | 日志分级、异常处理、配置隔离     | 区分开发配置和生产配置             |
-| Day61 | Docker 基础、Dockerfile          | 将 Spring Boot 应用构建为镜像      |
-| Day62 | Docker Compose、MySQL、Redis     | 编排本地服务并验证数据库连接       |
-| Day63 | Java 项目工程化验收              | 编写启动文档、测试说明和项目架构图 |
-
-**周验收：** 处理并发选课、重复提交，配置规范，Docker 部署验证通过。
-
-##### 第 10 周：AI 应用基础（Day 64–70）
-
-| 天数  | 课程知识点                      | 当天练习 / 验收标准                         |
-|-------|---------------------------------|---------------------------------------------|
-| Day64 | LLM、Token、Prompt、模型 API    | 发送模型请求并验证响应结构                  |
-| Day65 | Java HTTP Client、模型 API 调用 | Java 程序完成一次模型问答                   |
-| Day66 | Spring AI、ChatClient           | Spring Boot 提供 AI 问答接口                |
-| Day67 | System Prompt、上下文、多轮对话 | 支持会话 ID 与基础对话历史                  |
-| Day68 | Embedding、向量、语义检索原理   | 对示例文本生成向量并完成相似度检索          |
-| Day69 | RAG 基础、文档切分、向量存储    | 构建小型校园制度知识库检索                  |
-| Day70 | AI 阶段验收                     | AI 助手能基于知识库回答问题，并提供检索来源 |
-
-**周验收：** Java 可调用大模型，AI 接口可运行，能够完成文档向量检索与知识库问答。
-
-##### 第 11 周：工具调用与 AI 项目交付（Day 71–77）
-
-| 天数  | 课程知识点                       | 当天练习 / 验收标准                  |
-|-------|----------------------------------|--------------------------------------|
-| Day71 | Tool Calling 原理、工具定义      | 实现查询课程的 Java 工具方法         |
-| Day72 | Spring AI 工具集成               | AI 助手能够通过授权接口获取课程信息  |
-| Day73 | 工具权限、输入校验、提示注入基础 | 阻止未授权查询及非法工具参数         |
-| Day74 | AI 助手与业务平台整合            | 完成知识库问答与课程查询流程         |
-| Day75 | 异常与降级、超时处理、测试       | 模型不可用时接口返回合理错误         |
-| Day76 | 项目 README、接口文档、架构图    | GitHub 仓库具备完整运行说明          |
-| Day77 | 第四阶段综合验收                 | 演示后端业务系统与 AI 助手的核心功能 |
-
-**周验收：** 知识库问答、经授权的课程查询可用，接口具备权限校验和异常处理，文档与代码一致。
-
-**阶段交付物：** `Campus Assistant Platform V2.0`；包括并发选课、Docker 部署、Spring AI、RAG、工具调用、授权查询、异常处理及测试。
-
-#### 第五阶段：面试准备与求职冲刺（Day 78–90）
-
-阶段目标：把项目与编程能力转化为面试表达能力，完善求职材料。本阶段开始理论问答训练。
-
-##### 第 12 周：Java 后端高频面试专题（Day 78–84）
-
-| 天数  | 课程知识点                         | 当天练习 / 验收标准                |
-|-------|------------------------------------|------------------------------------|
-| Day78 | Java 基础：OOP、String、异常、泛型 | 独立口述 10 道基础面试题           |
-| Day79 | 集合：ArrayList、HashMap、HashSet  | 解释使用场景、哈希冲突、基本复杂度 |
-| Day80 | 并发：线程池、锁、volatile、死锁   | 回答 8 道常见并发题并完成小实验    |
-| Day81 | JVM：内存、GC、类加载              | 绘制核心结构并解释常见问题         |
-| Day82 | MySQL：索引、事务、锁、SQL 优化    | 通过 10 道数据库问答与 SQL 练习    |
-| Day83 | Spring：IoC、AOP、事务、Bean       | 结合实际项目解释这些技术           |
-| Day84 | Redis、HTTP、网络、Linux 综合复盘  | 进行一次 40 分钟模拟技术面试       |
-
-**周验收：** 回答 Java 后端高频问题，结合项目解释技术场景，完成综合模拟面试。
-
-##### 第 13 周：算法、项目复盘与简历（Day 85–90）
-
-| 天数  | 课程知识点                     | 当天练习 / 验收标准              |
-|-------|--------------------------------|----------------------------------|
-| Day85 | 数组、双指针、哈希表           | 限时完成 2 道基础算法题          |
-| Day86 | 链表、栈、队列、二分查找       | 完成 2 道算法题并分析复杂度      |
-| Day87 | 二叉树、DFS/BFS、动态规划入门  | 完成 2 道题或在提示下完成        |
-| Day88 | 项目复盘、架构设计、业务难点   | 完成 3–5 分钟项目介绍并接受追问  |
-| Day89 | Java 后端简历、GitHub 项目整理 | 完成初版简历，检查项目可复现性   |
-| Day90 | 综合技术模拟面试和最终验收     | 完成知识测验、现场编码和项目答辩 |
-
-**周验收：** 完成基础算法训练、项目技术答辩、简历初稿及最终综合面试。
-
-**阶段交付物：** Java 面试复习资料、LeetCode 练习、项目技术介绍、简历及完整 GitHub 项目展示。
-
-## 4. 正式项目
-
-整个学习周期主要维护两个正式项目。
-
-### Project 01：Student Manager Console
-
-项目路径：
+**第一阶段交付物：**
 
 `projects/student-manager-console/`
 
-计划开发周期：Day 08–35。
+完成学生管理系统的控制台版本，支持增删改查、集合存储、文件保存、异常处理、Maven 构建及至少八个关键测试场景。
 
-主要功能：
+#### 第二阶段：Java 核心进阶与数据库（Day 22–35）
 
-1. 学生信息录入、查询、修改和删除。
+阶段目标：掌握数据持久化、数据库访问、并发基础和 Web 开发所需的网络知识。
+
+##### 第 4 周：MySQL 与 JDBC（Day 22–28）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day22 | MySQL 安装、数据库、表及数据类型 | 建立 student_db 数据库和 student 表 |
+| Day23 | SQL 增删改查、WHERE、ORDER BY | 完成至少十条 SQL 并检查执行结果 |
+| Day24 | 聚合、分组、分页、JOIN | 建立班级表，实现关联查询与统计 |
+| Day25 | 主键、外键、索引、EXPLAIN | 设计查询索引并分析执行计划 |
+| Day26 | 事务、ACID、隔离级别 | 使用转账案例验证提交与回滚 |
+| Day27 | JDBC、PreparedStatement、DAO | 使用 Java 实现数据库 CRUD |
+| Day28 | 数据库阶段综合验收 | 学生管理系统 V3，改用 MySQL 保存数据 |
+
+**周验收目标：** 能创建和维护数据库，编写常用 SQL，解释事务行为，并使用参数化查询实现学生管理功能。
+
+##### 第 5 周：Java 核心与 Web 基础（Day 29–35）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day29 | 进程、线程、Thread、Runnable | 编写两个可以并发执行的任务 |
+| Day30 | 线程安全、synchronized、线程池 | 复现并修正计数器竞态问题 |
+| Day31 | JVM 内存、GC、类加载 | 借助 JVM 工具观察程序运行 |
+| Day32 | HTTP、URL、状态码、JSON | 使用 Postman 或 curl 发起 HTTP 请求 |
+| Day33 | TCP/IP、DNS、HTTPS、REST | 分析 DNS 解析与 HTTP 通信 |
+| Day34 | Linux 命令、进程与端口 | 完成文件、进程和网络操作练习 |
+| Day35 | 第二阶段综合验收 | 检验 JDBC、事务、并发、HTTP 与 Linux 基础 |
+
+**周验收目标：** Java 能够正常访问 MySQL，事务与线程安全实验通过，掌握基础网络及 Linux 操作。
+
+**第二阶段交付物：**
+
+Student Manager Console V3，支持 MySQL/JDBC CRUD、参数化 SQL 和异常处理，并保留数据库建表脚本及实验记录。
+
+#### 第三阶段：Spring Boot 后端开发（Day 36–56）
+
+阶段目标：能够构建提供 REST API 的后端应用，实现数据持久化、事务、缓存、认证和测试。
+
+##### 第 6 周：Spring 与第一个 Web API（Day 36–42）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day36 | Spring IoC、DI、Bean | 用独立案例验证依赖注入 |
+| Day37 | Spring Boot、Starter、配置 | 创建并启动 Spring Boot 工程 |
+| Day38 | Controller、REST API、请求参数 | 实现 /api/hello 及学生查询接口 |
+| Day39 | Service 分层、DI、DTO | 分离控制层与业务逻辑 |
+| Day40 | GET、POST、PUT、DELETE、HTTP 状态码 | 完成内存数据 CRUD 接口 |
+| Day41 | 参数校验、统一异常处理、响应规范 | 处理缺失参数与非法成绩 |
+| Day42 | Spring Boot 第一周验收 | 学生管理 API V1，完成接口测试 |
+
+**周验收目标：** 能独立启动 Spring Boot 服务，编写基本 CRUD API，并正确处理参数校验和异常。
+
+##### 第 7 周：持久层与事务（Day 43–49）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day43 | MyBatis、Mapper、SQL 映射 | 完成 Spring Boot 与 MySQL 连接 |
+| Day44 | MyBatis CRUD、动态 SQL | 将学生接口接入数据库 |
+| Day45 | 分页、排序、条件查询 | 完成学生分页及姓名搜索 |
+| Day46 | 数据库关系设计、课程和选课 | 创建学生、课程、选课三张表 |
+| Day47 | @Transactional、事务边界 | 实现选课及课程容量事务 |
+| Day48 | Spring AOP、注解、日志 | 通过 AOP 记录请求信息 |
+| Day49 | 后端阶段验收 | 学生与课程 API 支持 CRUD 和选课 |
+
+**周验收目标：** MyBatis 与数据库正常协作，能够完成选课业务、分页查询和事务回滚验证。
+
+##### 第 8 周：Redis、认证与测试（Day 50–56）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day50 | Redis 数据类型和基本命令 | 操作 String、Hash、Set 及过期时间 |
+| Day51 | Spring Boot 与 Redis | 实现课程列表缓存和 TTL |
+| Day52 | 缓存一致性、缓存穿透基础 | 数据更新后正确清理缓存 |
+| Day53 | 密码哈希、登录、会话、JWT | 完成基础用户认证 |
+| Day54 | Spring Security、授权 | 阻止未认证访问受保护接口 |
+| Day55 | JUnit、MockMvc、API 测试 | 为核心服务及接口建立自动化测试 |
+| Day56 | 第三阶段综合验收 | 验收 API、MySQL、Redis、认证和测试 |
+
+**周验收目标：** 后端系统具备完整的数据持久化、基础缓存、认证授权与自动化测试能力。
+
+**第三阶段交付物：**
+
+`projects/campus-assistant-platform/` V1.0。
+
+包含学生管理、课程管理、选课事务、MyBatis、Redis、认证授权、统一异常处理和自动化测试。
+
+#### 第四阶段：后端工程化与 AI 智能体（Day 57–77）
+
+阶段目标：提高后端应用的工程质量，并将大语言模型、知识检索与工具调用整合到校园业务平台。
+
+##### 第 9 周：项目完善与部署（Day 57–63）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day57 | 分层架构、职责划分、项目重构 | 清理重复代码并调整包结构 |
+| Day58 | 并发业务、选课容量竞争 | 验证多个请求同时选课不会超限 |
+| Day59 | 乐观锁、条件更新、幂等性 | 解决重复请求和容量竞争 |
+| Day60 | 日志级别、异常、配置隔离 | 分离开发环境与生产配置 |
+| Day61 | Docker、Dockerfile | 打包 Spring Boot 应用镜像 |
+| Day62 | Docker Compose、MySQL、Redis | 编排本地依赖服务并测试连接 |
+| Day63 | 工程化综合验收 | 完成启动文档、测试说明和架构图 |
+
+**周验收目标：** 并发业务正确，配置和日志合理，能够使用 Docker 部署项目。
+
+##### 第 10 周：AI 应用基础（Day 64–70）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day64 | LLM、Token、Prompt、模型 API | 发送模型请求并解析返回数据 |
+| Day65 | Java HTTP Client 与模型服务 | 使用 Java 调用模型完成问答 |
+| Day66 | Spring AI、ChatClient | 开发 Spring Boot AI 问答接口 |
+| Day67 | System Prompt、上下文、多轮会话 | 实现会话 ID 和对话历史 |
+| Day68 | Embedding、向量、语义检索 | 向量化文本并进行相似度检索 |
+| Day69 | RAG、文档切分、向量存储 | 建立校园制度知识检索示例 |
+| Day70 | AI 阶段验收 | AI 助手根据检索知识回答并展示来源 |
+
+**周验收目标：** Java 可以调用大模型 API，基于 Spring Boot 提供 AI 服务，并具备简单的知识库检索能力。
+
+##### 第 11 周：工具调用与 AI 项目交付（Day 71–77）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day71 | Tool Calling、工具定义 | 编写 Java 课程查询工具方法 |
+| Day72 | Spring AI 工具集成 | AI 助手通过授权接口查询课程 |
+| Day73 | 工具权限、参数校验、提示注入防护 | 拒绝越权查询与无效参数 |
+| Day74 | AI 助手与业务平台集成 | 完成知识问答和课程查询链路 |
+| Day75 | 超时处理、异常降级、测试 | 模型不可用时返回合理错误 |
+| Day76 | README、API 文档、架构图 | 完善 GitHub 项目说明与复现步骤 |
+| Day77 | 第四阶段综合验收 | 演示完整业务后端和 AI 助手 |
+
+**周验收目标：** AI 知识检索与经过授权的业务查询可以正常工作，关键接口具有权限控制、异常处理和测试记录。
+
+**第四阶段交付物：**
+
+Campus Assistant Platform V2.0。
+
+包含并发选课、Docker 部署、Spring AI、RAG、Tool Calling、权限校验、异常处理和系统测试。
+
+#### 第五阶段：面试准备与求职冲刺（Day 78–90）
+
+阶段目标：整理 Java 后端知识与项目成果，系统进行算法训练、项目表达、简历优化和模拟面试。
+
+##### 第 12 周：Java 后端高频面试专题（Day 78–84）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day78 | Java 基础、OOP、String、异常、泛型 | 口述十道基础面试题 |
+| Day79 | ArrayList、HashMap、HashSet | 解释应用场景、哈希冲突和复杂度 |
+| Day80 | 线程池、锁、volatile、死锁 | 完成八道并发问题及简单实验 |
+| Day81 | JVM 内存、GC、类加载 | 画出关键结构并解释工作原理 |
+| Day82 | MySQL 索引、事务、锁、SQL 优化 | 完成十道数据库问题及 SQL 练习 |
+| Day83 | Spring IoC、AOP、事务、Bean | 结合项目解释核心机制 |
+| Day84 | Redis、HTTP、网络、Linux | 完成一次 40 分钟技术模拟面试 |
+
+**周验收目标：** 能较完整地回答 Java 后端常见问题，能够结合亲自完成的项目解释技术选择和解决方案。
+
+##### 第 13 周：算法、项目复盘与简历（Day 85–90）
+
+| 天数 | 课程知识点 | 当天练习 / 验收标准 |
+|---|---|---|
+| Day85 | 数组、双指针、哈希表 | 限时完成两道基础算法题 |
+| Day86 | 链表、栈、队列、二分查找 | 解决两道算法题并分析复杂度 |
+| Day87 | 二叉树、DFS/BFS、动态规划基础 | 完成两道题或在提示下实现 |
+| Day88 | 项目架构、业务设计、关键难点 | 完成 3–5 分钟项目介绍并接受追问 |
+| Day89 | Java 后端简历、GitHub 展示 | 形成简历初稿并检查项目复现流程 |
+| Day90 | 综合技术模拟面试与最终验收 | 进行知识考核、现场编程和项目答辩 |
+
+**周验收目标：** 完成算法练习、项目讲解、求职简历及最终综合面试。
+
+**第五阶段交付物：**
+
+Java 面试复习资料、LeetCode 练习记录、项目技术介绍、简历、GitHub 项目展示和最终能力验收记录。
+
+## 4. 正式项目
+
+90 天计划中主要维护两个长期项目。
+
+### Project 01：Student Manager Console
+
+项目目录：
+
+`projects/student-manager-console/`
+
+预计开发时间：Day 08–35。
+
+主要开发内容：
+
+1. 学生资料的新增、查询、修改和删除。
 2. 学生成绩管理与统计。
 3. 面向对象分层设计。
-4. Java 集合存储。
-5. 参数校验与异常处理。
+4. 使用 Java 集合保存学生信息。
+5. 参数检查及异常处理。
 6. 文件 IO 持久化。
-7. Maven 工程管理。
-8. JUnit 单元测试。
-9. JDBC 数据库访问。
-10. MySQL 数据持久化。
+7. Maven 构建。
+8. JUnit 基础测试。
+9. JDBC 数据访问。
+10. MySQL 数据存储。
 
-项目目标：验证 Java 核心基础与数据库开发能力。
+项目目标：检验 Java 核心语法、面向对象、工程结构和数据库操作能力。
 
-当前状态：尚未开始。
+当前状态：未开始。
 
 ### Project 02：Campus Assistant Platform
 
-项目路径：
+项目目录：
 
 `projects/campus-assistant-platform/`
 
-计划开发周期：Day 36–77。
+预计开发时间：Day 36–77。
 
-主要功能：
+主要开发内容：
 
-1. 用户与学生管理。
-2. 课程管理。
-3. 学生选课和退课。
+1. 学生及用户资料管理。
+2. 课程数据管理。
+3. 选课与退课。
 4. 重复选课校验。
-5. MySQL 数据持久化。
+5. MySQL 数据库。
 6. Spring Boot REST API。
 7. MyBatis 数据访问。
-8. 参数校验与统一异常处理。
+8. 参数校验和统一异常处理。
 9. 登录认证与权限控制。
-10. Redis 课程缓存。
+10. Redis 缓存。
 11. 并发选课与数据一致性。
 12. 自动化测试。
 13. Docker 部署。
 14. Spring AI 大模型接口。
-15. 校园课程制度 RAG 知识库。
+15. 校园制度 RAG 知识库。
 16. AI 工具调用。
-17. 基于用户身份的业务数据查询。
+17. 按用户身份查询业务数据。
 18. AI 安全防护及异常处理。
-19. README、接口文档与架构图。
+19. README、API 文档与架构图。
 
-项目目标：形成用于 Java 后端求职展示的综合工程项目。
+项目目标：构建能够体现 Java 后端业务开发与 AI 应用集成能力的完整项目，用于求职作品展示。
 
-当前状态：尚未开始。
+当前状态：未开始。
 
 ## 5. 仓库目录结构
 
-完整规划结构：
+### 5.1 长期规划结构
 
 ```text
 java-90-days/
 ├── README.md
 ├── .gitignore
-│
 ├── docs/
 │   ├── progress.md
 │   ├── checkpoints/
 │   └── handoffs/
-│
 ├── 01-java-basics/
 │   ├── day01/
 │   ├── day02/
 │   ├── day03/
 │   ├── day04/
+│   ├── day05/
 │   └── ...
-│
 ├── 02-java-core-database/
 │   └── ...
-│
 ├── 03-spring-boot/
 │   └── ...
-│
 ├── 04-ai-integration/
 │   └── ...
-│
 ├── 05-interview/
 │   └── ...
-│
 └── projects/
     ├── student-manager-console/
     └── campus-assistant-platform/
 ```
 
-注意：以上为长期规划，不代表这些目录已经全部创建。
+上述目录结构代表长期规划，不表示所有目录已经建立。按照每日课程和正式项目的实际进度逐步创建。
 
-每日根据实际课程逐步创建文件，不提前生成全部 90 天目录。
+### 5.2 每日学习目录
 
-### 每日学习目录
-
-以 Day 02 为例：
+Day 02：
 
 ```text
 01-java-basics/
@@ -432,7 +448,7 @@ java-90-days/
     └── notes.md
 ```
 
-Day 03 已完成目录：
+Day 03：
 
 ```text
 01-java-basics/
@@ -446,7 +462,7 @@ Day 03 已完成目录：
     └── notes.md
 ```
 
-Day 04 已完成目录：
+Day 04：
 
 ```text
 01-java-basics/
@@ -460,124 +476,220 @@ Day 04 已完成目录：
     └── notes.md
 ```
 
-- `code/`：当天独立编程练习。
-- `tasks.md`：课程任务与验收记录。
-- `notes.md`：知识点、代码要点和错误记录。
+Day 05：
 
-每日路线图中指定的 Java 源文件作为当天的核心综合验收产物。
+```text
+01-java-basics/
+└── day05/
+    ├── code/
+    │   ├── WarehouseStock.java
+    │   ├── InventoryUpdate.java
+    │   ├── DailySalesSummary.java
+    │   └── ScoreStatistics.java
+    ├── tasks.md
+    └── notes.md
+```
 
-教学过程中可以安排针对性小练习，但不要求每天只能创建一个 Java 文件，也不强制每节课创建一个新文件。
+文件用途：
 
-优先保证核心知识覆盖、独立编码、运行测试和学习时间合理。
+- code/：Java 编程练习。
+- tasks.md：课程任务、测试与验收结果。
+- notes.md：理论知识、最终代码、真实错误与修复经验。
+- docs/progress.md：累计学习进度。
+- docs/handoffs/dayXX.md：每日交接记录。
 
-### 正式项目目录
+路线图指定的 Java 文件是当天核心综合验收产物。
 
-学习 Maven 后，正式 Java 项目采用标准 Maven 结构。
+其他小练习根据课程内容和实际学习效果灵活安排，不机械追求练习数量。
 
-Spring Boot 项目根据业务需求逐步添加 controller、service、mapper、entity、dto、config、exception、security、ai 等包。
+### 5.3 正式项目结构
 
-不提前引入复杂微服务或多模块架构。
+学习 Maven 后，正式项目将采用标准 Maven 工程目录。
+
+Spring Boot 阶段逐步建立 controller、service、mapper、entity、dto、config、exception、security、ai 等包。
+
+在基础阶段不提前引入复杂微服务结构。
 
 ## 6. 学习与验收规则
 
-采用：
+正式学习流程：
 
-**知识讲解 → 示例演示 → 独立实操 → 提交代码 → 代码检查 → 提示修改 → 正式验收**
+**理论讲解 → 示例演示 → 独立编程 → 提交源码 → 代码审查 → 修改复验 → 正式验收**
 
-基本要求：
+### 6.1 课程要求
 
-1. 每次只学习一节课。
-2. 当前课程验收通过后才能学习下一节。
-3. 编程任务必须独立完成。
-4. 不提前提供完整练习答案。
-5. 所有任务包含明确文件路径、功能要求、运行方式和验收标准。
-6. 代码审查关注正确性、边界条件、异常处理和代码规范。
-7. 出现错误时先提示修改，再重新提交。
-8. 不假设代码已经编译、运行或提交。
-9. 每天控制在 2–3 小时。
-10. 每天使用一个独立会话。
-11. 所有需要提交内容的环节提供交互式提交框。
-12. 路线图指定的 Java 文件为当天核心综合验收文件。
-13. 小练习根据学习需要安排，不单纯追求练习数量。
-14. 每天最后的核心综合练习必须覆盖当天原定的主要知识点。
-15. 已经通过实际编程验证的内容不重复安排同类任务。
+1. 一次学习一节课程。
+2. 当前课程通过后解锁下一节。
+3. 正式编程任务由学习者独立实现。
+4. 示例程序不能直接代替正式练习答案。
+5. 不在任务开始前给出完整正式答案。
+6. 每项任务必须说明文件名、类名、路径、业务要求和输出格式。
+7. 理论讲解应覆盖本节必要知识，不能仅提供语法片段。
+8. 课程中正常复用已经学习的 Java 知识。
+9. 不提前引入后续课程中的主要语法。
+10. 每次课程应有明确验收结论。
+11. 一天最后的综合练习必须覆盖当天规定的核心知识点。
+12. 每日学习时间原则上控制在 2–3 小时。
+13. 不为增加练习数量而重复已经验收的基础内容。
 
-### 理论问答限制
+### 6.2 静态代码审查
+
+检查内容包括：
+
+- 文件名和类名
+- main 方法
+- 数据类型
+- 变量声明与初始化
+- Java 语法正确性
+- 条件分支
+- 循环与边界
+- 数组及索引
+- 输入合法性
+- 业务逻辑
+- 输出格式
+- 代码规范
+- 是否使用未学习的语法
+
+编译状态由学习者自行负责。
+
+**不再要求提交 javac 编译终端记录。**
+
+但明显的语法、类名或代码结构问题仍属于审查范围，必须修复。
+
+### 6.3 业务测试
+
+按照程序实际需求决定测试数量。
+
+| 程序类型 | 测试原则 |
+|---|---|
+| 简单固定数据输出 | 一组标准测试通常即可 |
+| 数组基础访问 | 覆盖必要的元素和索引 |
+| 条件分支 | 覆盖关键不同分支 |
+| 数值边界 | 检查有关上下限 |
+| Scanner 输入 | 检查必要的合法与非法输入 |
+| 复杂统计 | 检查正常数据、特殊排列及精度 |
+| 综合编程 | 覆盖核心业务功能及必要风险 |
+
+不机械要求每个程序执行大量重复测试。
+
+### 6.4 修改复验
+
+代码未通过时：
+
+1. 指出具体问题。
+2. 解释错误原因。
+3. 给出修改方向。
+4. 保留未受影响的已通过审查与测试。
+5. 只针对受影响部分安排必要复验。
+6. 不直接提供正式练习的完整修复答案。
+7. 所有阻断性问题解决后，才能正式通过。
+
+### 6.5 交互式提交
+
+需要提交代码或测试结果时，应提供可填写的交互式提交区域。
+
+提交按钮应可以实际向当前会话发送内容。
+
+交互式提交不以编译记录作为必要条件。
+
+已填写的内容不应因无关字段而无法提交。
+
+### 6.6 理论问答限制
 
 Day 01–77：
 
-- 不安排理论问答题。
-- 不安排选择题、判断题或填空题。
-- 不安排面试模拟或 Java 八股文背诵。
-- 通过实际编码、实验和项目功能进行验收。
+- 不安排独立理论问答。
+- 不使用选择题、判断题或填空题替代实操。
+- 不安排模拟面试。
+- 不要求提前背诵 Java 八股文。
+- 主要通过编程、运行、测试及项目功能完成验收。
 
-Day 78–90 统一进行理论知识、算法、项目答辩和技术面试训练。
+Day 78–90：
+
+集中进行理论复习、算法练习、项目答辩和模拟面试。
 
 ## 7. Git 管理规范
 
-- 使用统一仓库 `java-90-days`。
-- 每天完成验收后形成合理的提交记录。
-- 不提交 `.class`、`target/`、`out/`、IDE 本地缓存和日志。
-- 不提交数据库密码、API Key 或 Token。
-- 不覆盖已有代码。
-- 阶段项目完成后可以创建 Git Tag。
-- 不在未确认时标记已推送 GitHub。
+- 使用统一的 java-90-days Git 仓库。
+- 日常学习成果按学习日归档。
+- 每天课程验收完成后整理 Markdown。
+- 采用明确、可追踪的 Git Commit Message。
+- 优先精准暂存新增或修改的文件。
+- 不随意使用 git add .。
+- 不提交 .class、target/、out/ 或 IDEA 缓存。
+- 不提交 API Key、密码或 Token。
+- 不任意覆盖历史代码与学习记录。
+- 阶段项目完成后可按需创建 Git Tag。
+- 不在缺少实际证据时声明 Git 推送成功。
+- 提交后检查 HEAD 和 origin/main。
+- 检查工作区是否 clean。
 
-Commit Message 示例：
+### Commit Message 示例
 
 ```text
 feat(day01): complete Java fundamentals and environment setup
 feat(day02): complete Java basics exercises and learning records
 docs(day02): update Java input output learning records
 feat(day03): complete Java conditionals and switch exercises
+feat(day04): complete Java loops and number practice exercises
+feat(day05): complete Java arrays and score statistics exercises
 feat(student-manager): implement student CRUD
 fix(campus-assistant): prevent duplicate enrollment
 ```
 
+### 学习归档统一要求
+
+每日最终 Markdown 文档按照当天归档完成的预期状态编写。
+
+其中：
+
+- tasks.md 记录全部课程通过的最终结论。
+- notes.md 记录最终代码、知识点和修复经验。
+- docs/progress.md 更新累计进度。
+- docs/handoffs/dayXX.md 提供下一天交接依据。
+- README.md 同步学习与归档状态。
+
+实际 Git commit、push 和 clean 检查仍需真实执行。
+
+未获得实际 Commit SHA 时，不编造提交编号。
+
 ## 8. 当前学习进度
 
-最后更新：2026-11-13。
+最后更新：2026-11-15。
 
-| 学习日 | 主题                                   | 状态   |
-|--------|----------------------------------------|--------|
-| Day 01 | Java 基础认知、开发环境、第一个程序    | 已完成 |
-| Day 02 | 基本数据类型、变量、常量与基础输入输出 | 已完成 |
-| Day 03 | 运算符、if/else、switch 与成绩等级判断 | 已完成 |
-| Day 04 | for、while、break、continue 与循环控制 | 已完成 |
+### 8.1 每日学习状态
 
-当前已完成：4 / 90 天。
+| 学习日 | 主题 | 状态 |
+|---|---|---|
+| Day 01 | Java 基础认知与环境配置 | 已完成 |
+| Day 02 | 数据类型、变量、常量与输入输出 | 已完成 |
+| Day 03 | 运算符、if/else、switch | 已完成 |
+| Day 04 | for、while、break、continue | 已完成 |
+| Day 05 | 数组、一维数组遍历与索引 | 已完成 |
 
-Day 01 课程验收：4 / 4 通过。
+当前累计进度：**5 / 90 天**。
 
-Day 02 课程验收：4 / 4 通过。
+完成率：约 **5.56%**。
 
-Day 02 Java 编程练习：5 / 5 通过。
+### 8.2 Day 01 完成情况
 
-Day 03 课程验收：4 / 4 通过。
+课程验收：4/4。
 
-Day 03 Java 编程练习：4 / 4 通过。
-
-Day 03 业务测试：48 / 48 通过。
-
-Day 04 课程验收：4 / 4 通过。
-
-Day 04 Java 编程练习：4 / 4 通过。
-
-Day 04 业务测试：34 / 34 通过。
-
-Day 04 核心综合验收：CR01–CR20 全部通过，TC01–TC12 全部通过。
-
-当前开发环境：
-
-- JDK：Eclipse Temurin 21.0.12.1 LTS
-- IDE：IntelliJ IDEA
-- Project SDK：temurin-21
-
-已完成第一个 Java 程序：
+核心程序：
 
 `01-java-basics/day01/code/HelloJava.java`
 
-Day 02 已完成五个独立 Java 练习：
+已完成 JDK、IDEA、Java 类、main 方法、程序编译运行和基础输出。
+
+Day 01 Git 归档完成。
+
+### 8.3 Day 02 完成情况
+
+课程验收：4/4。
+
+Java 编程练习：5/5。
+
+已完成文件：
 
 - `01-java-basics/day02/code/StudentInfoDemo.java`
 - `01-java-basics/day02/code/BookOrderCalculator.java`
@@ -585,83 +697,278 @@ Day 02 已完成五个独立 Java 练习：
 - `01-java-basics/day02/code/CourseStatisticsReport.java`
 - `01-java-basics/day02/code/StudentInfo.java`
 
-五个 Java 程序均通过编译运行及正式验收。
+五个 Java 程序均已通过历史正式验收。
 
 其中：
 
-- CourseStatisticsReport.java：16/16 测试通过。
-- StudentInfo.java：15/15 测试通过，完成两组输入输出测试。
+- CourseStatisticsReport.java：TC01–TC16 通过。
+- StudentInfo.java：TC01–TC15 通过，并完成两组不同输入测试。
 
-Day 02 已完成变量、基本数据类型、类型转换、常量、算术运算、Scanner 标准输入与 printf 格式化输出等内容。
+已掌握变量、基本数据类型、常量、类型转换、算术运算、Scanner 输入和 printf 格式化输出。
 
-Day 03 已完成四个独立 Java 练习：
+Day 02 归档完成。
+
+### 8.4 Day 03 完成情况
+
+课程验收：4/4。
+
+Java 编程练习：4/4。
+
+已完成文件：
 
 - `01-java-basics/day03/code/LibraryAccessCheck.java`
 - `01-java-basics/day03/code/ShippingFeeCalculator.java`
 - `01-java-basics/day03/code/OrderStatusChecker.java`
 - `01-java-basics/day03/code/GradeJudge.java`
 
-四个 Java 程序均通过编译运行及正式验收。
+正式验收结果：
 
-其中：
+| 程序 | 静态审查 | 业务测试 |
+|---|---|---|
+| LibraryAccessCheck.java | 12/12 | 6/6 组 |
+| ShippingFeeCalculator.java | 15/15 | 10/10 组 |
+| OrderStatusChecker.java | 15/15 | 8/8 组 |
+| GradeJudge.java | 20/20 | 24/24 组 |
 
-- LibraryAccessCheck.java：12/12 验收通过，6/6 组业务测试通过。
-- ShippingFeeCalculator.java：15/15 验收通过，10/10 组业务测试通过。
-- OrderStatusChecker.java：15/15 验收通过，8/8 组业务测试通过。
-- GradeJudge.java：20/20 验收通过，24/24 组业务与边界测试通过。
+累计业务测试：48/48 组通过。
 
-Day 03 已完成关系运算符、逻辑运算符、boolean 表达式、if/else、switch、非法输入处理和成绩等级边界测试。
+已完成关系运算符、逻辑运算符、boolean 表达式、if/else、switch 和成绩等级边界判断。
 
-Day 04 已完成四个独立 Java 练习：
+已验收 Git 提交：`ed7f5d4`。
+
+Day 03 归档完成。
+
+### 8.5 Day 04 完成情况
+
+课程验收：4/4。
+
+Java 编程练习：4/4。
+
+已完成文件：
 
 - `01-java-basics/day04/code/ForPractice.java`
 - `01-java-basics/day04/code/InventoryPractice.java`
 - `01-java-basics/day04/code/ShelfScanPractice.java`
 - `01-java-basics/day04/code/NumberPractice.java`
 
-四个 Java 程序均通过正式审查及运行记录验收。
+正式验收结果：
 
-其中：
+| 程序 | 静态审查 | 业务测试 |
+|---|---|---|
+| ForPractice.java | 12/12 | 6/6 |
+| InventoryPractice.java | 12/12 | 8/8 |
+| ShelfScanPractice.java | 15/15 | 8/8 |
+| NumberPractice.java | 20/20 | 12/12 |
 
-- ForPractice.java：12/12 验收通过，6/6 组业务测试通过。
-- InventoryPractice.java：12/12 验收通过，8/8 组业务测试通过。
-- ShelfScanPractice.java：15/15 验收通过，8/8 组业务测试通过。
-- NumberPractice.java：20/20 验收通过，12/12 组业务与边界测试通过。
+本日规定的 34/34 组业务测试通过。
 
-Day 04 已完成 for、while、break、continue、循环边界、循环状态更新、嵌套循环、整数求和、九九乘法表及多轮输入控制等内容。
+NumberPractice.java 综合验收：
 
-Day 04 Git 归档尚未执行提交与推送。
+- CR01–CR20 全部通过。
+- TC01–TC12 全部通过。
+
+已掌握 for、while、break、continue、循环边界、状态更新、嵌套循环、求和、乘法表及多轮输入控制。
+
+已验收 Git 提交：
+
+`8f1758fffbeb9104db89abeec5876d106f3ebcd7`
+
+Day 04 Git 提交与推送已完成，并通过 HEAD 与 origin/main 一致及 clean 工作区检查。
+
+### 8.6 Day 05 完成情况
+
+课程验收：4/4。
+
+Java 编程练习：4/4。
+
+课程安排：
+
+| 课程 | 主题 | 状态 |
+|---|---|---|
+| D05-S01 | 数组声明、创建与初始化 | 验收通过 |
+| D05-S02 | 数组索引、length、元素修改与边界 | 验收通过 |
+| D05-S03 | 数组遍历、Scanner 输入与基础统计 | 验收通过 |
+| D05-S04 | ScoreStatistics.java 综合编程 | 验收通过 |
+
+已完成 Java 文件：
+
+- `01-java-basics/day05/code/WarehouseStock.java`
+- `01-java-basics/day05/code/InventoryUpdate.java`
+- `01-java-basics/day05/code/DailySalesSummary.java`
+- `01-java-basics/day05/code/ScoreStatistics.java`
+
+正式验收结果：
+
+| Java 文件 | 静态代码审查 | 正式业务测试 |
+|---|---|---|
+| WarehouseStock.java | 14/14 适用项 | 1/1 |
+| InventoryUpdate.java | 14/14 | 5/5 |
+| DailySalesSummary.java | 16/16 | 7/7 |
+| ScoreStatistics.java | 20/20 | 10/10 |
+| 合计 | 64/64 | 23/23 |
+
+#### D05-S01
+
+完成仓位库存的一维数组表示与读取。
+
+使用静态初始化、数组索引、length 和首尾元素访问。
+
+一组必要标准业务测试通过。
+
+#### D05-S02
+
+完成商品库存更新和索引边界检查。
+
+修复遗漏的入库数量上限条件，新增 TC05 复验通过。
+
+最终 14/14 静态审查、5/5 业务测试通过。
+
+#### D05-S03
+
+完成 Scanner 输入数组、普通 for 循环遍历及总销量累加。
+
+修复类名错误和非整数销量未及时停止的问题。
+
+最终 16/16 静态审查、7/7 业务测试通过。
+
+#### D05-S04
+
+核心综合文件：
+
+`ScoreStatistics.java`
+
+已实现：
+
+- 学生人数读取与范围校验。
+- 成绩数组动态创建。
+- Scanner 批量录入成绩。
+- 非整数与超范围数据处理。
+- 最高分和最低分计算。
+- 成绩总和及平均分计算。
+- 使用 double 避免整数除法丢失精度。
+- 平均分统一保留两位小数。
+- 单个学生、相同成绩、首尾极值等情况。
+- 非法人数及成绩处理。
+
+首次提交存在非法人数提示首字母大小写问题，修改后重新完成 TC07、TC08 复验。
+
+最终：
+
+- CR01–CR20：20/20 通过。
+- TC01–TC10：10/10 通过。
+- 无阻断性问题。
+
+#### Day 05 最终结果
+
+- 四节课程全部通过。
+- 四个 Java 程序全部通过。
+- 静态审查 64/64 适用项通过。
+- 正式业务测试 23/23 通过。
+- 核心综合文件 ScoreStatistics.java 完成。
+- Markdown 学习记录归档完成。
+- Git 归档按照最终状态整理。
+
+Day 05 完成后，累计进度为 5/90 天。
+
+### 8.7 当前开发环境
+
+- 操作系统：Windows
+- JDK：Eclipse Temurin 21.0.12.1 LTS
+- IDE：IntelliJ IDEA
+- Project SDK：temurin-21
+- Java 项目模块：java-90-days
+- Git 分支：main
 
 ## 9. 学习记录
 
+### 总体进度
+
 - [每日学习进度](docs/progress.md)
+
+### Day 01
+
 - [Day 01 学习任务](01-java-basics/day01/tasks.md)
 - [Day 01 学习笔记](01-java-basics/day01/notes.md)
 - [Day 01 交接记录](docs/handoffs/day01.md)
+
+### Day 02
+
 - [Day 02 学习任务](01-java-basics/day02/tasks.md)
 - [Day 02 学习笔记](01-java-basics/day02/notes.md)
 - [Day 02 交接记录](docs/handoffs/day02.md)
+
+### Day 03
+
 - [Day 03 学习任务](01-java-basics/day03/tasks.md)
 - [Day 03 学习笔记](01-java-basics/day03/notes.md)
 - [Day 03 交接记录](docs/handoffs/day03.md)
+
+### Day 04
+
 - [Day 04 学习任务](01-java-basics/day04/tasks.md)
 - [Day 04 学习笔记](01-java-basics/day04/notes.md)
 - [Day 04 交接记录](docs/handoffs/day04.md)
 
-后续学习记录按天持续补充。
+### Day 05
+
+- [Day 05 学习任务](01-java-basics/day05/tasks.md)
+- [Day 05 学习笔记](01-java-basics/day05/notes.md)
+- [Day 05 交接记录](docs/handoffs/day05.md)
+
+后续学习记录按照实际完成进度持续更新。
 
 ## 10. 当前项目状态
 
+### 正式项目
+
 - Student Manager Console：未开始。
 - Campus Assistant Platform：未开始。
-- Git 本地仓库及 GitHub Day 01–03 历史提交状态：已提交。
-- Day 03 已验收提交：`ed7f5d4`。
-- Day 04 Java 编程与综合验收：全部通过。
-- Day 04 Markdown 学习记录：已整理，待保存。
-- Day 04 Git 提交与推送：尚未执行。
 
-下一步：Day 05，Java 数组、一维数组遍历、索引。
+### 历史学习状态
 
-Day 05 核心综合验收文件：
+| 学习日 | 完成情况 | Git 状态 |
+|---|---|---|
+| Day 01 | 4/4 课程通过 | 归档完成 |
+| Day 02 | 4/4 课程、5/5 练习通过 | 归档完成 |
+| Day 03 | 4/4 课程、4/4 练习通过 | 归档完成 |
+| Day 04 | 4/4 课程、4/4 练习通过 | 归档完成 |
+| Day 05 | 4/4 课程、4/4 练习通过 | 归档完成（预期最终状态） |
 
-`01-java-basics/day05/code/ScoreStatistics.java`
+### 已验收 Git 记录
+
+- Day 02：`d29df72`
+- Day 03：`ed7f5d4`
+- Day 04：`8f1758fffbeb9104db89abeec5876d106f3ebcd7`
+
+### Day 05 归档信息
+
+Day 05 正式验收结果：
+
+- 静态代码审查：64/64 通过。
+- 正式业务测试：23/23 通过。
+- ScoreStatistics.java：CR01–CR20 通过。
+- ScoreStatistics.java：TC01–TC10 通过。
+
+新增 Java 文件：4 个。
+
+新增及更新 Markdown 文件：5 个。
+
+建议 Git 提交说明：
+
+`feat(day05): complete Java arrays and score statistics exercises`
+
+Day 05 Commit SHA 应以实际提交记录为准，不预先填写。
+
+### 下一步
+
+下一学习日：**Day 06**
+
+主题：**Java 方法定义、参数、返回值与方法重载**
+
+核心综合验收文件：
+
+`01-java-basics/day06/code/Calculator.java`
+
+综合任务：使用方法封装加法、减法、乘法、除法及最大值计算。
+
+继续执行一课一练、逐课验收、独立编程、必要测试和学习归档规则。
