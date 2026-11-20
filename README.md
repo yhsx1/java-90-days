@@ -415,6 +415,7 @@ java-90-days/
 │   ├── day03/
 │   ├── day04/
 │   ├── day05/
+│   ├── day06/
 │   └── ...
 ├── 02-java-core-database/
 │   └── ...
@@ -486,6 +487,20 @@ Day 05：
     │   ├── InventoryUpdate.java
     │   ├── DailySalesSummary.java
     │   └── ScoreStatistics.java
+    ├── tasks.md
+    └── notes.md
+```
+
+Day 06：
+
+```text
+01-java-basics/
+└── day06/
+    ├── code/
+    │   ├── LibraryNotice.java
+    │   ├── EmployeeWorkRecord.java
+    │   ├── StudentScoreCalculator.java
+    │   └── Calculator.java
     ├── tasks.md
     └── notes.md
 ```
@@ -633,6 +648,7 @@ docs(day02): update Java input output learning records
 feat(day03): complete Java conditionals and switch exercises
 feat(day04): complete Java loops and number practice exercises
 feat(day05): complete Java arrays and score statistics exercises
+feat(day06): complete Java methods and calculator exercises
 feat(student-manager): implement student CRUD
 fix(campus-assistant): prevent duplicate enrollment
 ```
@@ -655,7 +671,7 @@ fix(campus-assistant): prevent duplicate enrollment
 
 ## 8. 当前学习进度
 
-最后更新：2026-11-15。
+最后更新：2026-11-20。
 
 ### 8.1 每日学习状态
 
@@ -666,10 +682,11 @@ fix(campus-assistant): prevent duplicate enrollment
 | Day 03 | 运算符、if/else、switch | 已完成 |
 | Day 04 | for、while、break、continue | 已完成 |
 | Day 05 | 数组、一维数组遍历与索引 | 已完成 |
+| Day 06 | 方法定义、参数、返回值、方法重载 | 已完成 |
 
-当前累计进度：**5 / 90 天**。
+当前累计进度：**6 / 90 天**。
 
-完成率：约 **5.56%**。
+完成率：约 **6.67%**。
 
 ### 8.2 Day 01 完成情况
 
@@ -870,7 +887,154 @@ Java 编程练习：4/4。
 
 Day 05 完成后，累计进度为 5/90 天。
 
-### 8.7 当前开发环境
+### 8.7 Day 06 完成情况
+
+课程验收：4/4。
+
+Java 编程练习：4/4。
+
+课程安排：
+
+| 课程 | 主题 | 状态 |
+|---|---|---|
+| D06-S01 | 方法的概念、定义、调用与 void | 验收通过 |
+| D06-S02 | 方法参数与实参传递 | 验收通过 |
+| D06-S03 | return 与方法返回值 | 验收通过 |
+| D06-S04 | 方法重载与 Calculator.java 综合编程 | 验收通过 |
+
+已完成 Java 文件：
+
+- `01-java-basics/day06/code/LibraryNotice.java`
+- `01-java-basics/day06/code/EmployeeWorkRecord.java`
+- `01-java-basics/day06/code/StudentScoreCalculator.java`
+- `01-java-basics/day06/code/Calculator.java`
+
+正式验收结果：
+
+| Java 文件 | 静态代码审查 | 正式业务测试 |
+|---|---|---|
+| LibraryNotice.java | 14/14 | 1/1 |
+| EmployeeWorkRecord.java | 18/18 | 3/3 |
+| StudentScoreCalculator.java | 20/20 | 7/7 |
+| Calculator.java | 24/24 | 12/12 |
+| 合计 | 76/76 | 23/23 |
+
+#### D06-S01
+
+完成图书馆通知程序。
+
+使用四个自定义 void 方法组织业务输出。
+
+main 按顺序调用方法。
+
+printRules 只定义一次、调用两次。
+
+首次提交通过全部静态审查和必要业务测试。
+
+最终：
+
+- CR01–CR14：14/14。
+- TC01：1/1。
+- 无阻断性问题。
+
+#### D06-S02
+
+完成员工信息与工作时长管理程序。
+
+使用 String、int、double 和 int[] 参数传递业务数据。
+
+验证：
+
+- 多参数方法调用。
+- 同一方法处理不同员工。
+- 基本类型形参修改不影响调用方局部变量。
+- 数组引用参数能够修改共同引用数组的元素。
+
+首次提交工资输出使用 `%.2f`，不符合预期的 `8500.5` 格式。
+
+修改为 `%.1f` 后，CR18 和 TC01 复验通过。
+
+其余历史通过项保留。
+
+最终：
+
+- CR01–CR18：18/18。
+- TC01–TC03：3/3。
+- 无阻断性问题。
+
+#### D06-S03
+
+完成 StudentScoreCalculator.java。
+
+实现：
+
+- 两门课程总分。
+- 两门课程平均分。
+- 单科成绩合法性检查。
+- 两门成绩合法性与及格判断。
+- 使用 return 返回计算和判断结果。
+- 使用方法调用复用业务逻辑。
+
+使用 `/ 2.0` 避免整数除法截断。
+
+首次提交全部通过。
+
+最终：
+
+- CR01–CR20：20/20。
+- TC01–TC07：7/7。
+- 无阻断性问题。
+
+#### D06-S04
+
+完成核心综合程序 Calculator.java。
+
+实现：
+
+- add(int,int) 和 add(double,double) 参数类型重载。
+- subtract 整数减法。
+- multiply 整数乘法。
+- divide 浮点数除法。
+- isValidDivisor 除数合法性判断。
+- 除数为 0 时返回 Double.NaN。
+- max(int,int) 和 max(int,int,int) 参数数量重载。
+- 三参数 max 复用两参数 max。
+- main 统一保存并输出返回值。
+
+首次提交所有 12 项业务测试通过，但 main 直接在 printf 中调用方法，未按规定保存十项返回值。
+
+CR22 未通过，初次静态审查为 23/24。
+
+调整后：
+
+- 十项调用返回值分别保存到对应类型的局部变量。
+- main 再统一输出结果。
+- CR22 针对性复验通过。
+- 正式十行输出回归验证通过。
+- TC06–TC12 历史通过结果保留。
+
+最终：
+
+- CR01–CR24：24/24。
+- TC01–TC12：12/12。
+- 无阻断性问题。
+
+#### Day 06 最终结果
+
+- 四节课程全部通过。
+- 四个 Java 程序全部通过。
+- 静态审查 76/76 通过。
+- 正式业务测试 23/23 通过。
+- 核心综合文件 Calculator.java 完成。
+- Calculator.java CR01–CR24 全部通过。
+- Calculator.java TC01–TC12 全部通过。
+- 所有针对性复验通过。
+- 无阻断性问题。
+- Markdown 学习记录按照最终状态整理。
+
+Day 06 完成后，累计进度为 6/90 天。
+
+### 8.8 当前开发环境
 
 - 操作系统：Windows
 - JDK：Eclipse Temurin 21.0.12.1 LTS
@@ -915,6 +1079,12 @@ Day 05 完成后，累计进度为 5/90 天。
 - [Day 05 学习笔记](01-java-basics/day05/notes.md)
 - [Day 05 交接记录](docs/handoffs/day05.md)
 
+### Day 06
+
+- [Day 06 学习任务](01-java-basics/day06/tasks.md)
+- [Day 06 学习笔记](01-java-basics/day06/notes.md)
+- [Day 06 交接记录](docs/handoffs/day06.md)
+
 后续学习记录按照实际完成进度持续更新。
 
 ## 10. 当前项目状态
@@ -932,7 +1102,8 @@ Day 05 完成后，累计进度为 5/90 天。
 | Day 02 | 4/4 课程、5/5 练习通过 | 归档完成 |
 | Day 03 | 4/4 课程、4/4 练习通过 | 归档完成 |
 | Day 04 | 4/4 课程、4/4 练习通过 | 归档完成 |
-| Day 05 | 4/4 课程、4/4 练习通过 | 归档完成（预期最终状态） |
+| Day 05 | 4/4 课程、4/4 练习通过 | 归档完成 |
+| Day 06 | 4/4 课程、4/4 练习通过 | 待实际 Git 归档验收 |
 
 ### 已验收 Git 记录
 
@@ -957,18 +1128,40 @@ Day 05 正式验收结果：
 
 `feat(day05): complete Java arrays and score statistics exercises`
 
-Day 05 Commit SHA 应以实际提交记录为准，不预先填写。
+Day 05 Commit SHA 以实际 Git 历史记录为准。
+
+### Day 06 归档信息
+
+Day 06 正式验收结果：
+
+- 四节课程：4/4 通过。
+- 四个 Java 程序：4/4 通过。
+- 静态代码审查：76/76 通过。
+- 正式业务测试：23/23 通过。
+- Calculator.java：CR01–CR24 全部通过。
+- Calculator.java：TC01–TC12 全部通过。
+- 阻断性问题：0。
+
+新增 Java 文件：4 个。
+
+新增及更新 Markdown 文件：5 个。
+
+建议 Git 提交说明：
+
+`feat(day06): complete Java methods and calculator exercises`
+
+Day 06 Commit SHA 应以实际提交记录为准，不预先填写。
 
 ### 下一步
 
-下一学习日：**Day 06**
+下一学习日：**Day 07**
 
-主题：**Java 方法定义、参数、返回值与方法重载**
+主题：**第一周综合复习与考核**
 
-核心综合验收文件：
+核心任务：
 
-`01-java-basics/day06/code/Calculator.java`
+完成命令行学生成绩统计器，至少通过五组业务测试。
 
-综合任务：使用方法封装加法、减法、乘法、除法及最大值计算。
+继续执行一课一练、逐课验收、独立编程、必要测试与归档规则。
 
-继续执行一课一练、逐课验收、独立编程、必要测试和学习归档规则。
+在 Day 06 Git 归档正式完成前，不进入 Day 07。
