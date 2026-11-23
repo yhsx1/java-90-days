@@ -416,6 +416,7 @@ java-90-days/
 │   ├── day04/
 │   ├── day05/
 │   ├── day06/
+│   ├── day07/
 │   └── ...
 ├── 02-java-core-database/
 │   └── ...
@@ -501,6 +502,20 @@ Day 06：
     │   ├── EmployeeWorkRecord.java
     │   ├── StudentScoreCalculator.java
     │   └── Calculator.java
+    ├── tasks.md
+    └── notes.md
+```
+
+Day 07：
+
+```text
+01-java-basics/
+└── day07/
+    ├── code/
+    │   ├── TicketLoadAnalyzer.java
+    │   ├── ApiLatencyAnalyzer.java
+    │   ├── AccessLogAuditor.java
+    │   └── StudentGradeAnalyzer.java
     ├── tasks.md
     └── notes.md
 ```
@@ -649,6 +664,7 @@ feat(day03): complete Java conditionals and switch exercises
 feat(day04): complete Java loops and number practice exercises
 feat(day05): complete Java arrays and score statistics exercises
 feat(day06): complete Java methods and calculator exercises
+feat(day07): complete Java fundamentals review and grade analyzer
 feat(student-manager): implement student CRUD
 fix(campus-assistant): prevent duplicate enrollment
 ```
@@ -671,7 +687,7 @@ fix(campus-assistant): prevent duplicate enrollment
 
 ## 8. 当前学习进度
 
-最后更新：2026-11-20。
+最后更新：2026-11-23。
 
 ### 8.1 每日学习状态
 
@@ -683,10 +699,11 @@ fix(campus-assistant): prevent duplicate enrollment
 | Day 04 | for、while、break、continue | 已完成 |
 | Day 05 | 数组、一维数组遍历与索引 | 已完成 |
 | Day 06 | 方法定义、参数、返回值、方法重载 | 已完成 |
+| Day 07 | 第一周综合复习与考核 | 已完成 |
 
-当前累计进度：**6 / 90 天**。
+当前累计进度：**7 / 90 天**。
 
-完成率：约 **6.67%**。
+完成率：约 **7.78%**。
 
 ### 8.2 Day 01 完成情况
 
@@ -883,7 +900,7 @@ Java 编程练习：4/4。
 - 正式业务测试 23/23 通过。
 - 核心综合文件 ScoreStatistics.java 完成。
 - Markdown 学习记录归档完成。
-- Git 归档按照最终状态整理。
+- Git 归档完成。
 
 Day 05 完成后，累计进度为 5/90 天。
 
@@ -1030,11 +1047,205 @@ CR22 未通过，初次静态审查为 23/24。
 - Calculator.java TC01–TC12 全部通过。
 - 所有针对性复验通过。
 - 无阻断性问题。
-- Markdown 学习记录按照最终状态整理。
+- Markdown 学习记录归档完成。
+- Git 归档完成。
 
 Day 06 完成后，累计进度为 6/90 天。
 
-### 8.8 当前开发环境
+### 8.8 Day 07 完成情况
+
+课程验收：4/4。
+
+Java 编程练习：4/4。
+
+课程安排：
+
+| 课程 | 主题 | 状态 |
+|---|---|---|
+| D07-S01 | 基础知识整合与方法拆分 | 验收通过 |
+| D07-S02 | 数组与方法综合处理 | 验收通过 |
+| D07-S03 | Scanner 输入校验与业务流程 | 验收通过 |
+| D07-S04 | 命令行学生成绩统计器综合考核 | 验收通过 |
+
+已完成 Java 文件：
+
+- `01-java-basics/day07/code/TicketLoadAnalyzer.java`
+- `01-java-basics/day07/code/ApiLatencyAnalyzer.java`
+- `01-java-basics/day07/code/AccessLogAuditor.java`
+- `01-java-basics/day07/code/StudentGradeAnalyzer.java`
+
+正式验收结果：
+
+| Java 文件 | 静态代码审查 | 正式业务测试 |
+|---|---|---|
+| TicketLoadAnalyzer.java | 16/16 | 6/6 |
+| ApiLatencyAnalyzer.java | 18/18 | 5/5 |
+| AccessLogAuditor.java | 20/20 | 7/7 |
+| StudentGradeAnalyzer.java | 27/27 | 7/7 |
+| 合计 | 81/81 | 25/25 |
+
+#### D07-S01
+
+完成 TicketLoadAnalyzer.java。
+
+已实现：
+
+- 工单优先级合法性判断。
+- 持续读取和结束标记。
+- 有效工单统计。
+- 紧急工单统计。
+- 工作量积分累计。
+- 工作负载等级判断。
+- 三个独立 static 方法。
+
+首次存在非法提示缺少英文句号、等级输出标签大小写错误。
+
+修改后：
+
+- CR07、CR14 通过。
+- 六组实际业务测试通过。
+- 其余历史通过项保留。
+
+最终：
+
+- CR16/16。
+- TC6/6。
+- 阻断性问题：0。
+
+#### D07-S02
+
+完成 ApiLatencyAnalyzer.java。
+
+已实现：
+
+- 动态耗时数组。
+- 请求耗时批量输入。
+- 数组传参。
+- 总耗时统计。
+- 最大值和最小值统计。
+- 平均耗时计算。
+- 慢请求数量统计。
+- 方法复用。
+- 返回值保存与统一输出。
+
+首次提交没有将五个统计结果保存到局部变量。
+
+CR13 未通过。
+
+修改后：
+
+- 先调用五个统计方法。
+- 保存返回值。
+- 统一输出报告。
+- CR13 通过。
+- TC01 回归测试通过。
+
+最终：
+
+- CR18/18。
+- TC5/5。
+- 阻断性问题：0。
+
+#### D07-S03
+
+完成 AccessLogAuditor.java。
+
+已实现：
+
+- hasNextInt 非整数输入判断。
+- next 消耗错误 token。
+- 整数范围校验。
+- 输入重试。
+- 通用输入方法。
+- 有效记录计数。
+- 访问类型统计。
+- 风险积分与风险等级。
+- 非法输入不占用有效记录名额。
+
+首次提交全部通过。
+
+最终：
+
+- CR20/20。
+- TC7/7。
+- 阻断性问题：0。
+
+#### D07-S04
+
+完成命令行学生成绩统计器。
+
+核心文件：
+
+`StudentGradeAnalyzer.java`
+
+已实现：
+
+- 读取 1–10 名学生人数。
+- 读取 0–100 的合法成绩。
+- 非整数输入重试。
+- 超范围输入重试。
+- 成绩数组动态创建。
+- readScores 返回成绩数组。
+- readBoundedInt 统一输入校验。
+- calculateTotal 总分计算。
+- findHighest 最高分计算。
+- findLowest 最低分计算。
+- calculateAverage 平均分计算。
+- countAtLeast 及格人数统计。
+- countAtLeast 优秀人数统计。
+- calculatePassRate 百分比计算。
+- main 保存返回值并统一输出。
+
+核心程序采用八个自定义 static 方法。
+
+其中：
+
+- readScores 复用 readBoundedInt。
+- calculateAverage 复用 calculateTotal。
+- countAtLeast 通过阈值参数实现复用。
+
+首次提交：
+
+- CR26/27。
+- TC7/7。
+- CR22 未通过。
+
+问题：
+
+calculatePassRate 返回比例值，main 再乘以 100，不满足方法直接返回百分比数值的要求。
+
+修改后：
+
+- calculatePassRate 在方法内部完成百分比换算。
+- main 直接格式化返回值。
+- CR22 复验通过。
+- TC05 的 66.67% 回归验证通过。
+- TC01–TC04、TC06–TC07 结果保留。
+
+最终：
+
+- CR27/27。
+- TC7/7。
+- 阻断性问题：0。
+
+#### Day 07 最终结果
+
+- 四节课程全部正式通过。
+- 四个 Java 程序全部通过。
+- 静态审查：81/81。
+- 正式业务测试：25/25。
+- 核心综合程序：StudentGradeAnalyzer.java。
+- 核心综合审查：27/27。
+- 核心综合测试：7/7。
+- 所有必要复验通过。
+- 剩余阻断性问题：0。
+- 满足 README 第 3.1 节的 Day 07 任务要求。
+- 五份 Markdown 学习记录归档完成。
+- Git 归档完成。
+
+Day 07 完成后，累计进度为 7/90 天。
+
+### 8.9 当前开发环境
 
 - 操作系统：Windows
 - JDK：Eclipse Temurin 21.0.12.1 LTS
@@ -1085,6 +1296,12 @@ Day 06 完成后，累计进度为 6/90 天。
 - [Day 06 学习笔记](01-java-basics/day06/notes.md)
 - [Day 06 交接记录](docs/handoffs/day06.md)
 
+### Day 07
+
+- [Day 07 学习任务](01-java-basics/day07/tasks.md)
+- [Day 07 学习笔记](01-java-basics/day07/notes.md)
+- [Day 07 交接记录](docs/handoffs/day07.md)
+
 后续学习记录按照实际完成进度持续更新。
 
 ## 10. 当前项目状态
@@ -1103,13 +1320,16 @@ Day 06 完成后，累计进度为 6/90 天。
 | Day 03 | 4/4 课程、4/4 练习通过 | 归档完成 |
 | Day 04 | 4/4 课程、4/4 练习通过 | 归档完成 |
 | Day 05 | 4/4 课程、4/4 练习通过 | 归档完成 |
-| Day 06 | 4/4 课程、4/4 练习通过 | 待实际 Git 归档验收 |
+| Day 06 | 4/4 课程、4/4 练习通过 | 归档完成 |
+| Day 07 | 4/4 课程、4/4 练习通过 | 归档完成 |
 
 ### 已验收 Git 记录
 
 - Day 02：`d29df72`
 - Day 03：`ed7f5d4`
 - Day 04：`8f1758fffbeb9104db89abeec5876d106f3ebcd7`
+
+Day 05–07 的具体 Commit SHA 以真实 Git 历史记录为准。
 
 ### Day 05 归档信息
 
@@ -1124,7 +1344,7 @@ Day 05 正式验收结果：
 
 新增及更新 Markdown 文件：5 个。
 
-建议 Git 提交说明：
+Git 提交说明：
 
 `feat(day05): complete Java arrays and score statistics exercises`
 
@@ -1146,22 +1366,67 @@ Day 06 正式验收结果：
 
 新增及更新 Markdown 文件：5 个。
 
-建议 Git 提交说明：
+Git 提交说明：
 
 `feat(day06): complete Java methods and calculator exercises`
 
-Day 06 Commit SHA 应以实际提交记录为准，不预先填写。
+Day 06 Git 归档完成。
+
+Day 06 Commit SHA 以实际提交记录为准，不预先填写。
+
+### Day 07 归档信息
+
+Day 07 正式验收结果：
+
+- 四节课程：4/4 通过。
+- 四个 Java 程序：4/4 通过。
+- 静态代码审查：81/81 通过。
+- 正式业务测试：25/25 通过。
+- StudentGradeAnalyzer.java：CR01–CR27 全部通过。
+- StudentGradeAnalyzer.java：TC01–TC07 全部通过。
+- 所有必要针对性复验通过。
+- 阻断性问题：0。
+
+新增 Java 文件：4 个。
+
+新增及更新 Markdown 文件：5 个。
+
+核心综合程序：
+
+`01-java-basics/day07/code/StudentGradeAnalyzer.java`
+
+本日实际完成：
+
+- 方法拆分与工单统计。
+- 数组与方法综合处理。
+- Scanner 非整数输入检查与重试。
+- 学生成绩综合统计。
+- 平均分、及格人数、优秀人数与及格率计算。
+- 25 组正式业务测试。
+- 81 项静态代码审查。
+
+Git 提交说明：
+
+`feat(day07): complete Java fundamentals review and grade analyzer`
+
+Day 07 学习成果已按照 Markdown 与 Git 归档完成的预期状态整理。
+
+具体 Commit SHA 以真实 Git 提交记录为准，不预先填写。
 
 ### 下一步
 
-下一学习日：**Day 07**
+下一学习日：**Day 08**
 
-主题：**第一周综合复习与考核**
+主题：**类、对象、字段与成员方法**
 
 核心任务：
 
-完成命令行学生成绩统计器，至少通过五组业务测试。
+`Student.java`，创建多个学生对象。
 
-继续执行一课一练、逐课验收、独立编程、必要测试与归档规则。
+Day 08 将正式开始 Java 面向对象编程。
 
-在 Day 06 Git 归档正式完成前，不进入 Day 07。
+继续执行一课一练、逐课验收、独立编程、实际运行测试、针对性复验和最终归档规则。
+
+Day 01–77 不安排独立理论问答。
+
+Day 07 四节课程已全部通过正式验收，学习记录按照 Git 归档完成的预期最终状态整理，下一学习日为 Day 08。
