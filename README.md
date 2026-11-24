@@ -361,7 +361,11 @@ Java 面试复习资料、LeetCode 练习记录、项目技术介绍、简历、
 
 项目目标：检验 Java 核心语法、面向对象、工程结构和数据库操作能力。
 
-当前状态：未开始。
+当前状态：尚未正式开始。
+
+已完成 Day 08 的 Student.java 面向对象基础训练，为后续学生管理系统开发建立类、对象、实例字段、成员方法及成绩校验基础。
+
+Day 08 的独立练习不计为正式项目 CRUD 功能完成。
 
 ### Project 02：Campus Assistant Platform
 
@@ -417,6 +421,7 @@ java-90-days/
 │   ├── day05/
 │   ├── day06/
 │   ├── day07/
+│   ├── day08/
 │   └── ...
 ├── 02-java-core-database/
 │   └── ...
@@ -520,6 +525,20 @@ Day 07：
     └── notes.md
 ```
 
+Day 08：
+
+```text
+01-java-basics/
+└── day08/
+    ├── code/
+    │   ├── LibraryBook.java
+    │   ├── ServerNode.java
+    │   ├── InventoryItem.java
+    │   └── Student.java
+    ├── tasks.md
+    └── notes.md
+```
+
 文件用途：
 
 - code/：Java 编程练习。
@@ -586,6 +605,10 @@ Spring Boot 阶段逐步建立 controller、service、mapper、entity、dto、co
 
 但明显的语法、类名或代码结构问题仍属于审查范围，必须修复。
 
+正式任务发布时明确并冻结 CR 审查标准。
+
+验收过程中不随意增加此前未规定的强制性条件。
+
 ### 6.3 业务测试
 
 按照程序实际需求决定测试数量。
@@ -601,6 +624,12 @@ Spring Boot 阶段逐步建立 controller、service、mapper、entity、dto、co
 | 综合编程 | 覆盖核心业务功能及必要风险 |
 
 不机械要求每个程序执行大量重复测试。
+
+正式任务发布时明确 TC 测试场景、预期结果及通过条件。
+
+固定数据程序可以通过一次完整运行覆盖多个业务测试场景。
+
+实际运行证据由学习者提交，不使用教学示例的预期输出代替真实运行结果。
 
 ### 6.4 修改复验
 
@@ -665,6 +694,7 @@ feat(day04): complete Java loops and number practice exercises
 feat(day05): complete Java arrays and score statistics exercises
 feat(day06): complete Java methods and calculator exercises
 feat(day07): complete Java fundamentals review and grade analyzer
+feat(day08): complete Java classes objects and student exercises
 feat(student-manager): implement student CRUD
 fix(campus-assistant): prevent duplicate enrollment
 ```
@@ -685,9 +715,31 @@ fix(campus-assistant): prevent duplicate enrollment
 
 未获得实际 Commit SHA 时，不编造提交编号。
 
+### Markdown 数学公式规范
+
+学习记录中的数学公式遵循 GitHub Markdown 渲染规范。
+
+行内公式使用 `$...$`。
+
+独立公式使用：
+
+$$
+\text{Average}=\frac{\text{Total}}{\text{Count}}
+$$
+
+要求：
+
+- 独立公式的 $$ 分隔符分别独占一行。
+- 公式前后保留空行。
+- 不使用 `\[` 和 `\]` 作为正式独立公式分隔符。
+- 数学公式不放入普通代码块。
+- LaTeX 反斜杠、花括号和命令保持完整。
+- 简单计算可以使用普通文本表达。
+- 保存前检查 Markdown 公式及代码块结构。
+
 ## 8. 当前学习进度
 
-最后更新：2026-11-23。
+最后更新：2026-11-24。
 
 ### 8.1 每日学习状态
 
@@ -700,10 +752,11 @@ fix(campus-assistant): prevent duplicate enrollment
 | Day 05 | 数组、一维数组遍历与索引 | 已完成 |
 | Day 06 | 方法定义、参数、返回值、方法重载 | 已完成 |
 | Day 07 | 第一周综合复习与考核 | 已完成 |
+| Day 08 | 类、对象、字段与成员方法 | 已完成 |
 
-当前累计进度：**7 / 90 天**。
+当前累计进度：**8 / 90 天**。
 
-完成率：约 **7.78%**。
+完成率：约 **8.89%**。
 
 ### 8.2 Day 01 完成情况
 
@@ -1245,7 +1298,285 @@ calculatePassRate 返回比例值，main 再乘以 100，不满足方法直接�
 
 Day 07 完成后，累计进度为 7/90 天。
 
-### 8.9 当前开发环境
+### 8.9 Day 08 完成情况
+
+课程验收：4/4。
+
+Java 编程练习：4/4。
+
+课程安排：
+
+| 课程 | 主题 | 状态 |
+|---|---|---|
+| D08-S01 | 类、对象与实例字段 | 验收通过 |
+| D08-S02 | 对象创建、引用与字段访问 | 验收通过 |
+| D08-S03 | 实例成员方法与对象行为 | 验收通过 |
+| D08-S04 | Student.java 综合编程 | 验收通过 |
+
+已完成 Java 文件：
+
+- `01-java-basics/day08/code/LibraryBook.java`
+- `01-java-basics/day08/code/ServerNode.java`
+- `01-java-basics/day08/code/InventoryItem.java`
+- `01-java-basics/day08/code/Student.java`
+
+正式验收结果：
+
+| Java 文件 | 静态代码审查 | 正式业务测试 |
+|---|---|---|
+| LibraryBook.java | 14/14 | 3/3 |
+| ServerNode.java | 22/22 | 6/6 |
+| InventoryItem.java | 28/28 | 10/10 |
+| Student.java | 36/36 | 12/12 |
+| 合计 | 100/100 | 31/31 |
+
+#### D08-S01
+
+完成 LibraryBook.java。
+
+已实现：
+
+- 定义图书类。
+- 声明 String、int、boolean 三个实例字段。
+- 使用 new 创建图书对象。
+- 输出实例字段默认值。
+- 通过对象引用修改字段。
+- 输出更新后的图书信息。
+- 再次修改借阅状态。
+
+正确验证 String 默认值 null、int 默认值0、boolean 默认值 false。
+
+首次提交全部通过。
+
+最终：
+
+- CR14/14。
+- TC3/3。
+- 正式7行输出正确。
+- 验收轮次：1。
+- 阻断性问题：0。
+
+#### D08-S02
+
+完成 ServerNode.java。
+
+已实现：
+
+- 创建两个独立服务器对象。
+- 分别设置实例字段。
+- 验证对象状态独立性。
+- 使用 == 比较对象引用。
+- 创建共享引用 selectedNode。
+- 通过共享引用修改对象字段。
+- 重新指定共享引用目标。
+- 验证引用切换后的状态修改。
+- 使用 null 解除共享引用。
+- 验证解除引用后原对象仍可访问。
+
+首次提交：
+
+- CR20/22。
+- TC6/6。
+
+实际问题：
+
+- 共享引用变量命名为 selectNode。
+- 解除共享引用发生在最终对象信息输出之前。
+
+修改后：
+
+- 统一使用 selectedNode。
+- 先输出两个对象的 Final 信息，再解除共享引用。
+- CR14、CR22 针对性复验通过。
+- 正式13行输出全部正确。
+- 全部六组业务测试原有通过结论保留。
+
+最终：
+
+- CR22/22。
+- TC6/6。
+- 验收轮次：2。
+- 阻断性问题：0。
+
+#### D08-S03
+
+完成 InventoryItem.java。
+
+使用四个实例字段和五个实例业务方法描述库存商品及其行为。
+
+实现：
+
+- printInfo 商品信息输出。
+- addStock 正常入库及非法入库保护。
+- calculateTotalValue 库存价值计算。
+- canRemoveStock 出库条件判断。
+- removeStock 实际出库及失败保护。
+- 两个商品对象状态独立性。
+- 正常出库与库存不足。
+- 恰好全部出库。
+- 零数量与负数出库。
+- 方法返回值保存。
+- 最终库存价值计算。
+
+removeStock 复用 canRemoveStock。
+
+main 中11次非 void 业务调用结果全部正确保存。
+
+首次提交：
+
+- CR24/28。
+- TC8/10。
+
+实际问题：
+
+- KeyBoard 大小写不符合要求。
+- 最终库存价值计算早于最终商品信息输出。
+
+修改后：
+
+- 商品名称修正为 Keyboard。
+- 先输出两个对象的最终信息，再计算库存价值。
+- CR19、CR25、CR27、CR28 复验通过。
+- TC01、TC10 复验通过。
+- 其他历史通过项保留。
+- 正式24行输出全部正确。
+
+五个实例业务方法均无需修改。
+
+最终：
+
+- CR28/28。
+- TC10/10。
+- 验收轮次：2。
+- 阻断性问题：0。
+
+#### D08-S04
+
+完成核心综合文件：
+
+`Student.java`
+
+定义六个实例字段：
+
+- studentId
+- name
+- age
+- javaScore
+- databaseScore
+- networkScore
+
+实现七个实例业务方法：
+
+- printInfo()
+- calculateTotalScore()
+- calculateAverageScore()
+- isPassed()
+- calculateGrade()
+- isValidScore(int score)
+- updateScores(int newJavaScore, int newDatabaseScore, int newNetworkScore)
+
+创建两个独立 Student 对象。
+
+已实现：
+
+- 学生对象初始化与信息输出。
+- 三门课程总分计算。
+- 三门课程平均分计算。
+- 使用 double 避免整数除法截断。
+- 平均成绩及格判断。
+- A、B、C、D、F 等级计算。
+- 成绩合法范围0–100检查。
+- 三门成绩整体更新。
+- 任意成绩非法时保持全部原始状态。
+- 不修改学号、姓名和年龄。
+- 不同对象的状态独立性。
+- 成绩更新后重新计算统计结果。
+- 方法复用。
+- main 保存返回值与统一输出。
+
+方法复用关系：
+
+- calculateAverageScore 复用 calculateTotalScore。
+- isPassed 与 calculateGrade 复用 calculateAverageScore。
+- updateScores 复用 isValidScore。
+
+main 中48次非 void 业务方法调用结果全部正确保存。
+
+已验证：
+
+- 两个对象的初始状态。
+- 正常成绩更新。
+- Java、Database、Network 三种非法更新。
+- 0、100、-1、101 合法范围边界。
+- 60、70、80、90 等级分界值。
+- 低于60分的合法成绩。
+- 最终学生状态及统计结果。
+
+首次提交：
+
+- CR34/36。
+- TC11/12。
+
+实际问题：
+
+- 第5行 Updated student1 result 与正式要求不一致。
+- 功能五未先保存全部四次 isValidScore 返回值，再统一输出。
+
+修改后：
+
+- 第5行修正为 Update student1 result: true。
+- 保留第8行原有正确的 Updated student1 标签。
+- 四次合法性检查调用结果先保存，再统一输出。
+- CR35、CR36 针对性复验通过。
+- TC03 针对性复验通过。
+- TC07 相关输出回归检查正确。
+- 正式28行输出全部正确。
+- 其他历史通过项全部保留。
+
+最终：
+
+- CR01–CR36：36/36。
+- TC01–TC12：12/12。
+- 七个实例业务方法全部正确。
+- 验收轮次：2。
+- 阻断性问题：0。
+
+#### Day 08 验收统计
+
+| 课程 | 首次 CR | 首次 TC | 最终 CR | 最终 TC | 验收轮次 |
+|---|---|---|---|---|---:|
+| D08-S01 | 14/14 | 3/3 | 14/14 | 3/3 | 1 |
+| D08-S02 | 20/22 | 6/6 | 22/22 | 6/6 | 2 |
+| D08-S03 | 24/28 | 8/10 | 28/28 | 10/10 | 2 |
+| D08-S04 | 34/36 | 11/12 | 36/36 | 12/12 | 2 |
+| 合计 | 92/100 | 28/31 | 100/100 | 31/31 | 7 |
+
+四轮首次验收，三轮针对性复验。
+
+本日发现六处任务规范符合性问题，全部完成修复。
+
+#### Day 08 最终结果
+
+- 四节课程全部正式通过。
+- 四个 Java 程序全部通过。
+- 静态审查：100/100。
+- 正式业务测试：31/31。
+- 核心综合程序：Student.java。
+- 核心综合审查：36/36。
+- 核心综合测试：12/12。
+- 累计验收轮次：7。
+- 实际问题修复：6/6。
+- 所有必要针对性复验通过。
+- 剩余阻断性问题：0。
+- 满足 README 第3.1节 Day 08 核心任务要求。
+- 五份 Markdown 学习记录归档完成。
+- Git 归档完成。
+
+已掌握类、对象、实例字段、引用关系、对象状态独立性、实例成员方法、方法参数与返回值及方法复用。
+
+Day 08 完成后，累计进度为 8/90 天。
+
+### 8.10 当前开发环境
 
 - 操作系统：Windows
 - JDK：Eclipse Temurin 21.0.12.1 LTS
@@ -1302,13 +1633,19 @@ Day 07 完成后，累计进度为 7/90 天。
 - [Day 07 学习笔记](01-java-basics/day07/notes.md)
 - [Day 07 交接记录](docs/handoffs/day07.md)
 
+### Day 08
+
+- [Day 08 学习任务](01-java-basics/day08/tasks.md)
+- [Day 08 学习笔记](01-java-basics/day08/notes.md)
+- [Day 08 交接记录](docs/handoffs/day08.md)
+
 后续学习记录按照实际完成进度持续更新。
 
 ## 10. 当前项目状态
 
 ### 正式项目
 
-- Student Manager Console：未开始。
+- Student Manager Console：尚未正式开始，已完成基础对象建模前置训练。
 - Campus Assistant Platform：未开始。
 
 ### 历史学习状态
@@ -1322,14 +1659,16 @@ Day 07 完成后，累计进度为 7/90 天。
 | Day 05 | 4/4 课程、4/4 练习通过 | 归档完成 |
 | Day 06 | 4/4 课程、4/4 练习通过 | 归档完成 |
 | Day 07 | 4/4 课程、4/4 练习通过 | 归档完成 |
+| Day 08 | 4/4 课程、4/4 练习通过 | 归档完成 |
 
 ### 已验收 Git 记录
 
 - Day 02：`d29df72`
 - Day 03：`ed7f5d4`
 - Day 04：`8f1758fffbeb9104db89abeec5876d106f3ebcd7`
+- Day 07：`17bb5ffdea1ee14d32a622b6922b5a265881042b`
 
-Day 05–07 的具体 Commit SHA 以真实 Git 历史记录为准。
+Day 05、Day 06 及 Day 08 的具体 Commit SHA 以真实 Git 历史记录为准。
 
 ### Day 05 归档信息
 
@@ -1411,22 +1750,103 @@ Git 提交说明：
 
 Day 07 学习成果已按照 Markdown 与 Git 归档完成的预期状态整理。
 
+历史已确认 Commit SHA：
+
+`17bb5ffdea1ee14d32a622b6922b5a265881042b`
+
+### Day 08 归档信息
+
+Day 08 正式验收结果：
+
+- 四节课程：4/4 通过。
+- 四个 Java 程序：4/4 通过。
+- 静态代码审查：100/100 通过。
+- 正式业务测试：31/31 通过。
+- Student.java：CR01–CR36 全部通过。
+- Student.java：TC01–TC12 全部通过。
+- 累计验收轮次：7。
+- 实际问题修复：6/6。
+- 所有必要针对性复验通过。
+- 阻断性问题：0。
+
+新增 Java 文件：4 个。
+
+新增及更新 Markdown 文件：5 个。
+
+核心综合程序：
+
+`01-java-basics/day08/code/Student.java`
+
+本日实际完成：
+
+- 类、对象与实例字段基础训练。
+- 实例字段默认值验证。
+- 多对象创建及状态独立性验证。
+- 引用共享与引用重新赋值。
+- 引用比较与 null 判断。
+- 实例成员方法定义与调用。
+- 方法参数与返回值综合运用。
+- 实例方法之间的复用。
+- 库存管理业务方法。
+- 多学生对象成绩计算。
+- 成绩合法性检查。
+- 合法成绩整体更新。
+- 非法更新状态保护。
+- 平均成绩及格与等级边界判断。
+- 31 组正式业务测试。
+- 100 项静态代码审查。
+
+归档文件：
+
+- `01-java-basics/day08/code/LibraryBook.java`
+- `01-java-basics/day08/code/ServerNode.java`
+- `01-java-basics/day08/code/InventoryItem.java`
+- `01-java-basics/day08/code/Student.java`
+- `01-java-basics/day08/tasks.md`
+- `01-java-basics/day08/notes.md`
+- `docs/progress.md`
+- `docs/handoffs/day08.md`
+- `README.md`
+
+Git 提交说明：
+
+`feat(day08): complete Java classes objects and student exercises`
+
+Day 08 学习成果已按照 Markdown 与 Git 归档完成的预期状态整理。
+
 具体 Commit SHA 以真实 Git 提交记录为准，不预先填写。
 
 ### 下一步
 
-下一学习日：**Day 08**
+下一学习日：**Day 09**
 
-主题：**类、对象、字段与成员方法**
+主题：**构造方法、this、封装、getter/setter**
 
 核心任务：
 
-`Student.java`，创建多个学生对象。
+为学生年龄和成绩增加合法性限制。
 
-Day 08 将正式开始 Java 面向对象编程。
+Day 09 将在 Day 08 类、对象、实例字段、成员方法及成绩合法性检查基础上，进一步学习对象初始化和封装。
+
+主要学习：
+
+- 构造方法定义及调用。
+- 默认构造方法与显式构造方法。
+- 有参数构造方法。
+- 构造方法重载。
+- this 与当前对象。
+- 实例字段与同名参数区分。
+- private 字段。
+- getter/setter。
+- 对象状态合法性维护。
+- 学生年龄与成绩合法性限制。
 
 继续执行一课一练、逐课验收、独立编程、实际运行测试、针对性复验和最终归档规则。
 
+继续采用明确冻结的 CR/TC 验收标准。
+
+学习记录按照 Git 归档完成的预期最终状态编写，数学公式遵循 GitHub Markdown 渲染规范。
+
 Day 01–77 不安排独立理论问答。
 
-Day 07 四节课程已全部通过正式验收，学习记录按照 Git 归档完成的预期最终状态整理，下一学习日为 Day 08。
+Day 08 四节课程已全部通过正式验收，学习记录按照 Git 归档完成的预期最终状态整理，下一学习日为 Day 09。
